@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "title": "crocs",
+      "descr": "original",
+      "image": "https://cdn.shopify.com/s/files/1/0577/7784/8502/products/100014kz_classic_5_671x.jpg?v=1663668208",
+      "price": 400,
+      "model": "home",
+      "size": "40",
+      "color": "blue",
+      "id": 1
+    },
+    {
+      "title": "Nike",
+      "descr": "Original",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-mens-shoes-jBrhbr.png",
+      "price": 700,
+      "model": "Air Force 1 ",
+      "size": "44",
+      "color": "White",
+      "id": 2
+    },
+    {
+      "title": "",
+      "descr": "",
+      "image": "",
+      "price": 0,
+      "model": "",
+      "size": "",
+      "color": "",
+      "id": 3
+    },
+    {
+      "title": "njkl",
+      "descr": "jkl",
+      "image": "jk",
+      "price": null,
+      "model": "jkl",
+      "size": "jkl",
+      "color": "jkl",
+      "id": 4
+    },
+    {
+      "title": "Nike",
+      "descr": "original",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b38436e0-1698-4ccd-ad71-7f64bb805ea6/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+      "price": 700,
+      "model": "Air Jordan",
+      "size": "40",
+      "color": "Black",
+      "id": 5
+    },
+    {
+      "title": "Nike",
+      "descr": "original",
+      "image": "https://www.deadstock.de/wp-content/uploads/2023/01/Nike-Air-Jordan-1-Low-Panda-DC0774-101-dead-stock-titel-bild-1.jpeg",
+      "price": 600,
+      "model": "Air Jordan Low",
+      "size": "42",
+      "color": "black-white",
+      "id": 6
+    }
+  ]
+}

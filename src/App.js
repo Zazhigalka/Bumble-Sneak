@@ -1,15 +1,18 @@
 import React from "react";
-import HomePage from "./components/HomePage/Home";
 import NavbarPage from "./pages/NavbarPage";
 import FooterPage from "./pages/FooterPage";
+import ProductContextProvider from "./components/contexts/ProductContextProvider";
+import MainRoutes from "./routes/MainRoutes";
 
 const App = () => {
   return (
-    <div>
+    <>
       <NavbarPage />
-      <HomePage />
+      <ProductContextProvider>
+        <MainRoutes />
+      </ProductContextProvider>
       <FooterPage />
-    </div>
+    </>
   );
 };
 
