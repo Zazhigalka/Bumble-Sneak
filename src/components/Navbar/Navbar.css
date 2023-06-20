@@ -1,0 +1,44 @@
+.navbar{
+  margin: 0;
+  font-family: "Montserrat";
+}
+.navbar {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  /* margin-left: 3rem;
+  margin-right: 4rem; */
+}
+.navbar__left_ul {
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar__left_ul,
+.navbar__logo,
+.navbar__right_ul {
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.navbar__li {
+  list-style-type: none;
+  font-size: 15px;
+}
+.navbar__logo {
+  width: 10rem;
+}
+.navbar__right_ul {
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+}
+.icons {
+  width: 1rem;
+  margin-left: 0.3rem;
+}
+.navbar__li {
+  display: flex;
+  align-self: center;
+}
