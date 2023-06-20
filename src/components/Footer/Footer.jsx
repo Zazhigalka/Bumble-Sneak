@@ -4,7 +4,6 @@ import inst_logo from "./imgs/inst_logo.png";
 import facebook_logo from "./imgs/facebook_logo.png";
 import WA_logo from "./imgs/WA_Logo.png";
 import "typeface-montserrat";
-
 const Footer = () => {
   return (
     <div className="footer">
