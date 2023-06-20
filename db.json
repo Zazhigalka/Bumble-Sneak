@@ -39,6 +39,26 @@
       "size": "jkl",
       "color": "jkl",
       "id": 4
+    },
+    {
+      "title": "Nike",
+      "descr": "original",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b38436e0-1698-4ccd-ad71-7f64bb805ea6/air-jordan-1-hi-flyease-mens-shoes-VjGcGX.png",
+      "price": 700,
+      "model": "Air Jordan",
+      "size": "40",
+      "color": "Black",
+      "id": 5
+    },
+    {
+      "title": "Nike",
+      "descr": "original",
+      "image": "https://www.deadstock.de/wp-content/uploads/2023/01/Nike-Air-Jordan-1-Low-Panda-DC0774-101-dead-stock-titel-bild-1.jpeg",
+      "price": 600,
+      "model": "Air Jordan Low",
+      "size": "42",
+      "color": "black-white",
+      "id": 6
     }
   ]
 }

@@ -1,0 +1,25 @@
+div {
+  position: relative;
+  width: 100%;
+}
+.notBtn {
+  z-index: 1;
+  position: absolute;
+  top: 67.4%;
+  left: 38.6%;
+  width: 22.8%;
+  height: 10%;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff00;
+}
+
+.notBtn:hover {
+  cursor: pointer;
+  background-color: #ffffff63;
+
+}
+
+.notImg {
+  width: 100%;
+}
