@@ -1,6 +1,17 @@
 .footer {
   margin: 0;
   font-family: "Montserrat";
+  background-color: #e6e8dd;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer__ul {
@@ -11,18 +22,18 @@
 }
 .footer__li {
   margin-bottom: 0.5rem;
-  font-size: 24px;
+  font-size: 25px;
+  font-weight: 500;
 }
-.footer {
-  background-color: #e6e8dd;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 5rem;
+.footer__li:hover {
+  color: #ed910fa1;
+}
+.socials:hover {
+  transform: scale(1.25);
 }
 
 .socials {
   width: 2rem;
   height: auto;
   margin-left: 3rem;
-  font-family: I;
 }
