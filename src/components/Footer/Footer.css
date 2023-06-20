@@ -1,0 +1,28 @@
+.footer {
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+.footer__ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.footer__li {
+  margin-bottom: 0.5rem;
+  font-size: 24px;
+}
+.footer {
+  background-color: #e6e8dd;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.socials {
+  width: 2rem;
+  height: auto;
+  margin-left: 3rem;
+  font-family: I;
+}
