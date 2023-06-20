@@ -50,7 +50,9 @@ const AddProroduct = () => {
 
   return (
     <div className="admin">
-      <h4 className="admin__title">Add Product</h4>
+      <h4 className="admin__title animate__animated animate__rubberBand">
+        ADD PRODUCT
+      </h4>
       <div className="admin__block animate__animated animate__bounce">
         <input
           className="admin__inputs animate__animated animate__backInLeft"
