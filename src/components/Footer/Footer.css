@@ -22,7 +22,14 @@
 }
 .footer__li {
   margin-bottom: 0.5rem;
-  font-size: 24px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.footer__li:hover {
+  color: #ed910fa1;
+}
+.socials:hover {
+  transform: scale(1.25);
 }
 
 .socials {

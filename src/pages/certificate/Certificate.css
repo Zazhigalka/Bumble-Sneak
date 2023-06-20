@@ -1,0 +1,29 @@
+.certificate{
+    width: 100%;
+}
+.certificate__title{
+    margin-left: 25rem;
+    width:48%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    margin-top: 2rem;
+}
+.certificate__name{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+
+}
+.certificate__text{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+}
+.certificate__design{
+    margin-top: 3rem;   
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}

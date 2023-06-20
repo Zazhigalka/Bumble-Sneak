@@ -20,10 +20,10 @@ const Navbar = () => {
         <img src={logo} alt="" className="navbar__logo" />
 
         <ul className="navbar__right_ul">
-          <li className="navbar__li text">
+          <li className="navbar__li navbar__li-texts">
             SEARCH <img src={search} alt="" className="icons navbar__search" />
           </li>
-          <li className="navbar__li text">
+          <li className="navbar__li navbar__li-texts">
             ACCOUNT{" "}
             <img src={account} alt="" className="icons navbar__account" />
           </li>

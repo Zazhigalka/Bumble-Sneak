@@ -18,18 +18,25 @@
 }
 
 .navbar__left_ul,
-.navbar__logo,
 .navbar__right_ul {
   padding: 0;
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
+
 .navbar__li {
   list-style-type: none;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 460;
 }
+.navbar__li:hover {
+  color: #ed910fa1;
+}
+
 .navbar__logo {
-  width: 10rem;
+  width: 15rem;
+  padding-top: 0;
+  padding-bottom: 2rem;
 }
 .navbar__right_ul {
   width: 40vw;
@@ -37,10 +44,29 @@
   justify-content: space-around;
 }
 .icons {
-  width: 1rem;
+  vertical-align: middle;
+}
+.icons:hover {
+  transform: scale(1.25);
+}
+.navbar__account {
+  width: 1.5rem;
   margin-left: 0.3rem;
 }
-.navbar__li {
+.navbar__search {
+  width: 1.9em;
+  margin-left: 0.3rem;
+}
+.navbar__favourite {
+  width: 2rem;
+  margin-bottom: 26px;
+}
+.navbar__cart {
+  width: 1.8rem;
+  margin-bottom: 26px;
+}
+.navbar__li-texts {
   display: flex;
-  align-self: center;
+  align-items: center;
+  margin-top: -2rem;
 }

@@ -4,6 +4,7 @@ import ProductPage from "../pages/ProductPage";
 import { Route, Routes } from "react-router-dom";
 import AdminPage from "../pages/AdminPage";
 import NotFoundPage from "../pages/NotFoundPage";
+import Certificate from "../pages/certificate/Certificate";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -26,6 +27,11 @@ const MainRoutes = () => {
       link: "*",
       element: <NotFoundPage />,
       id: 4,
+    },
+    {
+      link: "/certificate",
+      element: <Certificate />,
+      id: 5,
     },
   ];
   return (
