@@ -37,16 +37,17 @@ const Footer = () => {
         <ul className="footer__ul">
           <li className="footer__li">Community</li>
           <li className="footer__li">
-            <img src={inst_logo} className="socials footer__inst-logo"></img>
+            <img alt="" src={inst_logo} className="socials footer__inst-logo" />
           </li>
           <li className="footer__li">
             <img
+              alt=""
               src={facebook_logo}
               className="socials footer__facebook-logo"
-            ></img>
+            />
           </li>
           <li className="footer__li">
-            <img src={WA_logo} className="socials footer__wa-logo"></img>
+            <img alt="" src={WA_logo} className="socials footer__wa-logo" />
           </li>
         </ul>
       </div>
