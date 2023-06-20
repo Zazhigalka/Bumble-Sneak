@@ -1,13 +1,15 @@
-.navbar{
+.navbar {
   margin: 0;
   font-family: "Montserrat";
-}
-.navbar {
+  background-color: white;
   display: flex;
+  justify-content: center;
+}
+.container {
   width: 90%;
-  margin: auto;
-  /* margin-left: 3rem;
-  margin-right: 4rem; */
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
 }
 .navbar__left_ul {
   width: 40vw;
