@@ -8,14 +8,22 @@ import cart from "./imgs/cart.png";
 import "typeface-montserrat";
 
 const Navbar = () => {
+  const pagesLeft = [
+    { name: "NEW", link: "/admin", id: 1 },
+    { name: "SNEAKERS", link: "/products", id: 2 },
+    { name: "WOMEN", link: "/", id: 3 },
+    { name: "MEN", link: "/", id: 4 },
+  ];
+
   return (
     <div className="navbar">
       <div className="container">
         <ul className="navbar__left_ul">
-          <li className="navbar__li">NEW</li>
-          <li className="navbar__li">SNEAKERS</li>
-          <li className="navbar__li">WOMEN</li>
-          <li className="navbar__li">MEN</li>
+          {pagesLeft.map((page) => (
+            <a key={page.id} className="navbar__link" href={page.link}>
+              <li className="navbar__li">{page.name}</li>
+            </a>
+          ))}
         </ul>
         <span className="navbar__logo">
         <img src={logo} alt="" className="navbar__logo" />
