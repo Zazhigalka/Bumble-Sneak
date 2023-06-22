@@ -59,6 +59,16 @@
       "size": "42",
       "color": "black-white",
       "id": 6
+    },
+    {
+      "title": "NIke",
+      "descr": "Original",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-mens-shoes-jBrhbr.png",
+      "price": 700,
+      "model": "Air Force 1 ",
+      "size": "44",
+      "color": "White",
+      "id": 7
     }
   ]
 }
