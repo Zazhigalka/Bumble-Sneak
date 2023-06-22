@@ -28,6 +28,8 @@ import kids_force from "../../img/kids_force_crater.png";
 import kids_lv from "../../img/kids_force_lv.png";
 import kids_airmax from "../../img/kids_air_max.png";
 import kids_jordan from "../../img/kids_sky_jordan.png";
+import circle from "../../img/circle.png";
+
 const Home = () => {
   const popular = [
     { name: "ALL SNEAKERS", img: allsneakers, id: 1 },
@@ -244,6 +246,41 @@ const Home = () => {
               </div>
             </li>
           </ul>
+        </div>
+      </div>
+      <div className="container">
+        <div className="company">
+          <div className="company__left">
+            <h2 className="company__left_title">BUMBLE SNEAK</h2>
+            <p className="company__left_p">
+              Rooted in Amsterdam street culture we’ve <br />
+              always supported local initiatives, creatives and <br />
+              athletes from day one. Working on unique <br />
+              collaborations with both local and international <br />
+              brands and hosting regular events and parties in <br />
+              our shops for our community. Something we’ll <br />
+              continue doing wherever we go. <br />
+              <br />
+              <br />
+              With an expanding assortment of fashion and <br />
+              apparel brands, SD has become your service- <br />
+              first home for contemporary style.
+            </p>
+          </div>
+          <div className="company__right">
+            <p className="company__right_p">
+              "A service-first home for contemporary style." <br />
+              <br />
+              <br />
+              At Bumble Sneak you can expect an unrivalled <br />
+              level of service and an ever evolving range of <br />
+              sneakers and apparel. From the classic Nike, <br />
+              adidas, Puma and New Balance drops to the <br />
+              more exclusive brands and releases to surprise <br />
+              even the most curious among us.
+            </p>
+            <img className="company__right_img" src={circle} alt="" />
+          </div>
         </div>
       </div>
     </>

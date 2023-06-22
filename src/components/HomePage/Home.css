@@ -7,6 +7,13 @@
   border: 1px solid black;
 }
 
+.container {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+
+/*todo HOME MAIN */
 .home__up_line,
 .home__down_line {
   width: 100%;
@@ -85,12 +92,9 @@
   font-weight: 700;
 }
 
-.container {
-  width: 90%;
-  display: flex;
-  margin: auto;
-}
+/*todo HOME MAIN */
 
+/* todo CARD */
 .card:hover {
   -webkit-box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
@@ -163,6 +167,9 @@
   display: none;
 }
 
+/* todo CARD */
+
+/* todo BRANDS */
 .brands {
   display: flex;
   flex-direction: column;
@@ -183,6 +190,9 @@
   font-weight: 500;
 }
 
+/* todo BRANDS */
+
+/* todo NEWin */
 .newIn {
   width: 100%;
   display: flex;
@@ -280,7 +290,9 @@
   -moz-box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
   box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
 }
+/* todo NEWin */
 
+/* todo LATEST */
 .latest {
   width: 100%;
   height: 307px;
@@ -310,7 +322,6 @@
   flex-direction: column;
   position: relative;
   align-items: center;
-  border: 1px solid rgba(172, 172, 172, 0.814);
   padding-bottom: 100px;
 }
 
@@ -320,6 +331,9 @@
   box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
 }
 
+/* todo LATEST */
+
+/* todo ASICS */
 .asics {
   margin-top: 13%;
   display: flex;
@@ -331,6 +345,13 @@
   width: 44.5%;
   display: flex;
 }
+
+.asics__left:hover {
+  -webkit-box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
+}
+
 .asics__left__bg {
   width: 100%;
 }
@@ -348,6 +369,23 @@
 
 .asics__right_up {
   margin-bottom: 15px;
+}
+
+.asics__right_up:hover {
+  -webkit-box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
+}
+
+.asics__right_down {
+  background-color: #3d3d3d;
+  height: 445px;
+}
+
+.asics__right_down:hover {
+  -webkit-box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 8px 8px 23px 5px rgba(34, 60, 80, 0.2);
 }
 
 .asics__left_descr,
@@ -445,8 +483,9 @@
 .asics__right_down_btn:hover {
   cursor: pointer;
 }
+/* todo ASICS */
 
-/* kids */
+/* todo kids */
 
 .kids {
   display: flex;
@@ -483,6 +522,7 @@
 .kids__list_img {
   width: 100%;
   border: 1px solid #575656ad;
+  cursor: pointer;
 }
 
 .kids__list_img:hover {
@@ -516,4 +556,49 @@
   margin-top: 0%;
   margin-left: 30%;
 }
-/* kids */
+/* todo kids */
+
+/* todo company */
+.company {
+  display: flex;
+  width: 92%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.company__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.company__left_title {
+  font-size: 160px;
+  font-family: bebas neue;
+  margin: 0%;
+  color: #3d3d3d;
+}
+
+.company__left_p,
+.company__right_p {
+  margin: 0%;
+  font-family: montserrat;
+  font-weight: 500;
+  font-size: 30px;
+  color: #aaaaaa;
+}
+
+.company__right_p {
+  margin-top: 4%;
+}
+
+.company__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.company__right_img {
+  width: 200px;
+  margin: 0%;
+  margin: auto;
+}
+/* todo company */
