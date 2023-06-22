@@ -1,0 +1,143 @@
+.blog {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.blog__title {
+  font-family: "Montserrat";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 13rem;
+}
+.blog1,
+.blog5 {
+  display: flex;
+  justify-content: center;
+}
+.b-img1,
+.b-img6 {
+  margin-top: 2rem;
+  width: 35rem;
+}
+.b-img1 {
+  margin-left: 5rem;
+  width: 36rem;
+}
+.blogs__data {
+  color: #3d3d3db2;
+  font-family: "Montserrat";
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+.blog1__text,
+.blog5__text {
+  width: 23rem;
+  margin-left: 3rem;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  font-family: "Montserrat";
+  color: #3d3d3dcc;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+}
+.blog__links {
+  color: #ed910f;
+}
+
+.blog2,
+.blog4 {
+  display: flex;
+  justify-content: end;
+  margin-top: 6rem;
+  margin-left: -6rem;
+}
+.b-img2,
+.b-img5 {
+  margin-right: 14rem;
+  width: 35rem;
+}
+.blog2__text,
+.blog4__text {
+  width: 25.5rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  font-family: "Montserrat";
+  color: #3d3d3dcc;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+}
+.blog3 {
+  margin-top: 6rem;
+  text-align: center;
+}
+.b-img3 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  width: 26rem;
+  padding-bottom: 0.5rem;
+}
+.b-img4 {
+  width: 35rem;
+  margin-left: 0.5rem;
+}
+.blog3__text {
+  width: 43rem;
+  margin-left: 22rem;
+  font-family: "Montserrat";
+  color: #3d3d3dcc;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+}
+.blog5 {
+  margin-top: 6rem;
+  margin-left: -3rem;
+}
+
+.blog__btn {
+  background-color: #ed910f;
+  color: #3d3d3de5;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: 2px solid #3d3d3db2;
+  text-align: center;
+  width: 14rem;
+  height: 4rem;
+}
+.blog__btn:hover {
+  transform: scale(1.25);
+}
+.blog__btn-div {
+  margin-top: 8rem;
+  margin-bottom: 13rem;
+  display: flex;
+  justify-content: center;
+}
+
+.blog__imgs:hover {
+  transform: scale(1.05);
+}
+.blog1__text:hover,
+.blog5__text:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.03) 5px 5px, rgba(0, 0, 0, 0.06) 10px 10px;
+}
+.blog2__text:hover,
+.blog3__text:hover,
+.blog4__text:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.03) -5px 5px, rgba(0, 0, 0, 0.06) -10px 10px;
+}
+.blog3__text:hover {
+  box-shadow: rgba(0, 0, 0, 0.03) 5px 5px, rgba(0, 0, 0, 0.06) 10px 10px,
+    rgba(0, 0, 0, 0.03) -5px 5px, rgba(0, 0, 0, 0.06) -10px 10px;
+}

@@ -1,29 +1,216 @@
-.certificate{
-    width: 100%;
+.certificate {
+  width: 100%;
 }
-.certificate__title{
-    margin-left: 25rem;
-    width:48%;
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
-    margin-top: 2rem;
+.certificate__title {
+  margin-left: 28rem;
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 2rem;
 }
-.certificate__name{
-    padding: 0;
-    margin: 0;
-    font-weight: 400;
+.certificate__name {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+.certificate__text {
+  padding: 0;
+  margin: 0;
+  margin-right: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+.certificate__design {
+  margin-top: 4rem;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.certificate__design_ul {
+  padding: 0;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.c-img1,
+.c-img2,
+.c-img3 {
+  margin-right: 1.5rem;
+}
+.certificate__about-and-value_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  margin-bottom: 15rem;
+}
+.certificate__about {
+  background-color: #e6e8dd;
+  font-family: "Montserrat";
+  color: #3d3d3dcc, 80%;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  width: 20rem;
+  height: auto;
+  padding: 2rem;
+  text-align: left;
+}
+.certificate__about.text {
+  padding-top: 2rem;
+}
+.certificate__details {
+  width: auto;
+  margin-right: 16rem;
+  margin-top: 3rem;
+}
+.certificate__value,
+.certificate__type,
+.certificate__email,
+.certificate__payment {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  color: #3d3d3dcc, 80%;
+}
+.certificate__amount_input {
+  width: 12rem;
+  height: 2rem;
+}
+.certificate__currency {
+  width: 3.5rem;
+  height: 2.3rem;
+}
 
+.certificate__type-details,
+.certificate__email-details,
+.certificate__payment-details {
+  margin-top: 5rem;
 }
-.certificate__text{
-    padding: 0;
-    margin: 0;
-    font-weight: 400;
-    margin-bottom: 0.7rem;
+
+.certificate__type_btns-container {
+  display: flex;
 }
-.certificate__design{
-    margin-top: 3rem;   
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
+.certificate__type_btns {
+  background-color: white;
+  border: 1px solid #3d3d3dcc;
+  width: 15rem;
+  height: 4rem;
+  margin-top: 0.5rem;
+}
+.certificate__type_btn1 {
+  margin-right: 1rem;
+}
+.certificate__type_text {
+  width: 14rem;
+  text-align: left;
+  color: #3d3d3d99;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1rem;
+}
+.certificate__type_content {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+
+.certificate__type_circle {
+  width: 1.8rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  border: 3px solid rgb(76, 76, 76);
+}
+.t-circle1,
+.t-circle2 {
+  background-color: white;
+}
+.clicked {
+  background-color: #ed910f;
+}
+
+.certificate__email_input {
+  width: 19rem;
+  height: 2rem;
+}
+
+.certificate__type_text-bold {
+  font-weight: 550;
+}
+
+.certificate__payment_btns {
+  background-color: white;
+  border: 1px solid #3d3d3dcc;
+  width: 18rem;
+  height: 4rem;
+  margin-top: 0.5rem;
+}
+.certificate__payment_btns-container {
+  display: flex;
+  flex-direction: column;
+}
+.certificate__payment_btn2,
+.certificate__payment_btn3 {
+  margin-top: 1rem;
+}
+
+.certificate__payment_text {
+  width: 14rem;
+  text-align: left;
+  color: #3d3d3d99;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1rem;
+}
+.certificate__payment_content {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+.certificate__payment_circle {
+  width: 2.2rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 3px solid rgb(76, 76, 76);
+}
+.p-circle1,
+.p-circle2,
+.p-circle3 {
+  background-color: white;
+}
+.clicked {
+  background-color: #ed910f;
+}
+.certificate__payment_cards {
+  margin-left: 0.5rem;
+  width: 4rem;
+  min-height: auto;
+}
+.certificate__payment_mastercard {
+  width: 2.8rem;
+  margin-left: 1rem;
+  margin-right: 0.6rem;
+}
+.certificate__payment_paypal {
+  margin-left: 0.6rem;
+  margin-right: -0.2rem;
+}
+
+.certificate__btn {
+  margin-top: 3rem;
+  width: 20rem;
 }

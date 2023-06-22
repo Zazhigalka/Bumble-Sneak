@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import AdminPage from "../pages/AdminPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import Certificate from "../pages/certificate/Certificate";
+import Blog from "../pages/blog/Blog";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -32,6 +33,11 @@ const MainRoutes = () => {
       link: "/certificate",
       element: <Certificate />,
       id: 5,
+    },
+    {
+      link: "/blog",
+      element: <Blog/>,
+      id: 6,
     },
   ];
   return (
