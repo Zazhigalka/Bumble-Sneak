@@ -1,0 +1,85 @@
+.payment__container {
+  display: flex;
+  justify-content: center;
+}
+.payment {
+  width: 50rem;
+  background-color: rgba(230, 232, 221, 0.5);
+  height: 50rem;
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+  margin-left: 2.4rem;
+}
+.payment__info {
+  margin-left: 10rem;
+  margin-top: 6rem;
+  margin-bottom: 15rem;
+  color: rgba(61, 61, 61, 0.9);
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+.payment__info_title {
+  margin-bottom: 0.5rem;
+}
+.payment__info_inputs {
+  margin-bottom: 3rem;
+  width: 25rem;
+  height: 3.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.payment__expiry_input,
+.payment__cvv_input {
+  margin-bottom: 4rem;
+  margin-right: 4rem;
+  width: 14rem;
+  height: 3.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.payment__cvv_input {
+  width: 10rem;
+}
+.payment__expiry_input::placeholder,
+.payment__cvv_input::placeholder {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 450;
+}
+.payment__btn {
+  text-align: center;
+  background-color: #ed910fa1;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 15rem;
+  height: 4rem;
+  margin-left: 8rem;
+  font-size: 35px;
+  font-weight: 500;
+  color: rgba(61, 61, 61, 0.90);
+  font-family: "Montserrat";
+  border-radius: 5px;
+}
+
+.payment__text{
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgba(61, 61, 61, 0.9);
+margin-left: 5.4rem;
+}
+.payment__text_under{
+  font-size: 23px;
+  font-family: "Montserrat";
+  color: rgba(61, 61, 61, 0.9);
+margin-left:18.8rem;
+margin-top: -6rem;
+
+  text-decoration: underline;
+}

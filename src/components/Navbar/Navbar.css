@@ -22,6 +22,8 @@
   padding: 0;
   padding-top: 1rem;
   padding-bottom: 2rem;
+margin-top: 2.2rem;
+
 }
 
 .navbar__li {
@@ -34,14 +36,15 @@
 }
 
 .navbar__logo {
-  width: 15rem;
-  padding-top: 0;
+  width: 19rem;
+  padding-top: 0.5rem;
   padding-bottom: 2rem;
 }
 .navbar__right_ul {
   width: 40vw;
   display: flex;
   justify-content: space-around;
+  padding-top: 0.1rem;
 }
 .icons {
   vertical-align: middle;
@@ -59,14 +62,14 @@
 }
 .navbar__favourite {
   width: 2rem;
-  margin-bottom: 26px;
+  margin-top: 0.7rem;
 }
 .navbar__cart {
   width: 1.8rem;
-  margin-bottom: 26px;
+  margin-top: 0.7rem;
 }
 .navbar__li-texts {
   display: flex;
   align-items: center;
-  margin-top: -2rem;
+  margin-top: -5rem;
 }
