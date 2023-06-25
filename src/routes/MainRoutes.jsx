@@ -6,6 +6,11 @@ import AdminPage from "../pages/AdminPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import Certificate from "../pages/certificate/Certificate";
 import Blog from "../pages/blog/Blog";
+import BlogDetailed from "../pages/blog/BlogDetailed";
+import FAQ from "../pages/faq/FAQ";
+import FAQshipping from "../pages/faq/FAQshipping";
+import Payment from "../pages/payment/Payment";
+import PaymentSuccess from "../pages/payment/PaymentSuccess";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -38,6 +43,31 @@ const MainRoutes = () => {
       link: "/blog",
       element: <Blog/>,
       id: 6,
+    },
+    {
+      link: "/blogdetailed",
+      element: <BlogDetailed/>,
+      id: 7,
+    },
+    {
+      link: "/faq",
+      element: <FAQ/>,
+      id: 8,
+    },
+    {
+      link: "/faq-shipping",
+      element: <FAQshipping/>,
+      id: 9,
+    },
+    {
+      link: "/payment",
+      element: <Payment/>,
+      id: 10,
+    },
+    {
+      link: "/paymentsuccess",
+      element: <PaymentSuccess/>,
+      id: 11,
     },
   ];
   return (

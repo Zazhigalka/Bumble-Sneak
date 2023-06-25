@@ -25,7 +25,9 @@ const Navbar = () => {
             </a>
           ))}
         </ul>
+        <span className="navbar__logo">
         <img src={logo} alt="" className="navbar__logo" />
+        </span>
 
         <ul className="navbar__right_ul">
           <li className="navbar__li navbar__li-texts">
