@@ -6,6 +6,10 @@ import AdminPage from "../pages/AdminPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import Certificate from "../pages/certificate/Certificate";
 import Blog from "../pages/blog/Blog";
+import Auth from "../components/auth/Auth";
+import ProductDetails from "../components/products/productDetails/ProductDetails";
+import ProductMen from "../components/products/productGender/ProductMen";
+import ProductWomen from "../components/products/productGender/ProductWomen";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -36,10 +40,33 @@ const MainRoutes = () => {
     },
     {
       link: "/blog",
-      element: <Blog/>,
+      element: <Blog />,
       id: 6,
     },
+    {
+      link: "/auth",
+      element: <Auth />,
+      id: 7,
+    },
+    {
+      link: "/details/:id",
+      element: <ProductDetails />,
+      id: 8,
+    },
+    {
+      link: "/men",
+      element: <ProductMen />,
+      id: 9,
+    },
+    {
+      link: "/women",
+      element: <ProductWomen />,
+      id: 10,
+    },
   ];
+
+  // const menUrl =
+
   return (
     <Routes>
       {PUBLIC_ROUTES.map((item) => (

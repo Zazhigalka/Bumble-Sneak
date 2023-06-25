@@ -1,0 +1,15 @@
+.products__men {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.products__men_shoes {
+  display: flex;
+  margin-top: 50px;
+}
+
+.products__men_title {
+  font-family: montserrat;
+  font-size: 32px;
+}

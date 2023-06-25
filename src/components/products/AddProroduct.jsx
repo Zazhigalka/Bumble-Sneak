@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useProducts } from "../contexts/ProductContextProvider";
 import "./AddProduct.css";
 import "animate.css";
+import CategorySelect from "./CategorySelect";
+import GenderSelect from "./GenderSelect";
 
 const AddProroduct = () => {
   const [product, setProduct] = useState({
@@ -12,6 +14,8 @@ const AddProroduct = () => {
     model: "",
     size: "",
     color: "",
+    category: "",
+    gender: "",
   });
 
   const { addProduct } = useProducts();
@@ -23,7 +27,9 @@ const AddProroduct = () => {
       !product.image.trim() ||
       !product.model.trim() ||
       !product.size.trim() ||
-      !product.color.trim()
+      !product.color.trim() ||
+      !product.category.trim() ||
+      !product.gender.trim()
     ) {
       alert("Заполните инпуты");
       return;
@@ -103,6 +109,9 @@ const AddProroduct = () => {
           type="text"
           placeholder="Image"
         />
+
+        <CategorySelect product={product} setProduct={setProduct} />
+        <GenderSelect product={product} setProduct={setProduct} />
 
         <div className="button__div">
           <button

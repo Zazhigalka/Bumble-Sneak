@@ -14,15 +14,59 @@
 }
 
 /*todo HOME MAIN */
-.home__up_line,
+.home__up_line {
+  width: 100%;
+  margin: 0%;
+}
+
 .home__down_line {
   width: 100%;
   margin: 0%;
+  height: 70px;
+  z-index: 1;
+  position: absolute;
+  top: 8%;
+}
+.slide {
+  white-space: nowrap;
+  font-size: 40px;
+  animation: slide 13s linear infinite;
+  width: 100%;
+  position: absolute;
+  font-family: montserrat;
+  font-weight: 700;
+  color: #ffff;
+  top: 4.8%;
+  z-index: 2;
+}
+
+.slide__bfs {
+  margin-left: 10%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.home__down_line_up {
+  height: 60%;
+  background-color: rgb(62, 62, 62);
+}
+
+.home__down_line_down {
+  height: 40%;
+  background-color: rgba(62, 62, 62, 0.629);
 }
 
 .home__up {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .home__main {

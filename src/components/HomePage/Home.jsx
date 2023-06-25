@@ -29,13 +29,14 @@ import kids_lv from "../../img/kids_force_lv.png";
 import kids_airmax from "../../img/kids_air_max.png";
 import kids_jordan from "../../img/kids_sky_jordan.png";
 import circle from "../../img/circle.png";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const popular = [
-    { name: "ALL SNEAKERS", img: allsneakers, id: 1 },
-    { name: "MEN", img: men, id: 2 },
-    { name: "WOMEN", img: women, id: 3 },
-    { name: "KIDS", img: kids, id: 4 },
+    { name: "ALL SNEAKERS", link: "/products", img: allsneakers, id: 1 },
+    { name: "MEN", link: "/men", img: men, id: 2 },
+    { name: "WOMEN", link: "/women", img: women, id: 3 },
+    { name: "KIDS", link: "/products", img: kids, id: 4 },
   ];
 
   const latest = [
@@ -71,11 +72,21 @@ const Home = () => {
     },
   ];
 
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="home__up">
         <img className="home__up_line" src={upLine} alt="" />
-        <img className="home__down_line" src={downLine} alt="" />
+        {/* <img className="home__down_line" src={downLine} alt="" /> */}
+        <div className="home__down_line">
+          <div className="home__down_line_up"></div>
+          <div className="home__down_line_down"></div>
+        </div>
+        <h3 className="slide">
+          Up to 60% off Black Friday Sale! + 20% off with discount code SD20
+          <span className="slide__bfs">BLACK FRIDAY SALE</span>
+        </h3>
 
         <div className="home__main">
           <div className="home__main_title">
@@ -102,10 +113,12 @@ const Home = () => {
               >
                 <h4 className="card__title">{card.name}</h4>
 
-                <h5 style={{ opacity: 0.7 }} className="card__linked_buy">
-                  <span>Shop now </span>
-                  <img className="card__arrow" src={arrow} alt="" />
-                </h5>
+                <a href={card.link}>
+                  <h5 style={{ opacity: 0.7 }} className="card__linked_buy">
+                    <span>Shop now </span>
+                    <img className="card__arrow" src={arrow} alt="" />
+                  </h5>
+                </a>
 
                 <img className="card__img" src={card.img} alt="" />
               </div>
@@ -149,26 +162,28 @@ const Home = () => {
           <h3 className="home__popular_title">Latest Sneakers</h3>
           <div className="home__popular_card">
             {latest.map((card) => (
-              <div
-                className="card__latest"
-                key={card.id}
-                style={{
-                  width: "312px",
-                  height: "307px",
-                }}
-              >
-                <div className="card__img_div">
-                  <img className="card__img latest" src={card.img} alt="" />
-                  <h5 style={{ opacity: 0.7 }} className="card__linked_buy">
-                    <span>Shop now </span>
-                    <img className="card__arrow" src={arrow} alt="" />
-                  </h5>
+              <>
+                <div
+                  className="card__latest"
+                  key={card.id}
+                  style={{
+                    width: "312px",
+                    height: "307px",
+                  }}
+                >
+                  <div className="card__img_div">
+                    <img className="card__img latest" src={card.img} alt="" />
+                    <h5 style={{ opacity: 0.7 }} className="card__linked_buy">
+                      <span>Shop now </span>
+                      <img className="card__arrow" src={arrow} alt="" />
+                    </h5>
+                  </div>
+                  <div className="card__name_div">
+                    <h4 className="card__name">{card.name}</h4>
+                    <p className="card__descr">{card.descr}</p>
+                  </div>
                 </div>
-                <div className="card__name_div">
-                  <h4 className="card__name">{card.name}</h4>
-                  <p className="card__descr">{card.descr}</p>
-                </div>
-              </div>
+              </>
             ))}
           </div>
         </div>

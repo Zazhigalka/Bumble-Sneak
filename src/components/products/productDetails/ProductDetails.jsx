@@ -1,0 +1,77 @@
+import React, { useEffect } from "react";
+import { useProducts } from "../../contexts/ProductContextProvider";
+import { useParams } from "react-router-dom";
+import "../productDetails/ProductDetails.css";
+import { Margin } from "@mui/icons-material";
+
+const ProductDetails = () => {
+  const { getProductDetails, productDetails } = useProducts();
+  const { id } = useParams();
+
+  useEffect(() => {
+    getProductDetails(id);
+  }, []);
+  return (
+    <div className="container">
+      <div className="one__product">
+        <img width={"400px"} src={productDetails?.image} alt="" />
+        <div className="one__product_info">
+          <div className="one__product_title">
+            <h3>{productDetails?.title}</h3>
+            <h3>€ {productDetails?.price}</h3>
+          </div>
+          <p className="one__product_descr">{productDetails?.descr}</p>
+          <div className="one__product_model">
+            <h4
+              style={{ margin: "0px", marginRight: "30px", color: "#3d3d3d" }}
+            >
+              Model
+            </h4>
+            <h4 style={{ margin: "0px" }}>{productDetails?.model}</h4>
+          </div>
+          <div className="one__product_color">
+            <h4
+              style={{ margin: "0px", marginRight: "41px", color: "#3d3d3d" }}
+            >
+              Color
+            </h4>
+            <h4 style={{ margin: "0px" }}>{productDetails?.color}</h4>
+          </div>
+          <div style={{ fontSize: "24px" }} className="one__product_size">
+            <h2
+              style={{
+                fontWeight: "500",
+                color: "#3d3d3d",
+                marginRight: "50px",
+              }}
+            >
+              Size
+            </h2>
+            <h2
+              style={{
+                fontWeight: "500",
+                color: "#3d3d3d",
+              }}
+            >
+              <span style={{ textDecoration: "underline" }}>
+                {productDetails?.size}
+              </span>
+
+              <span
+                style={{
+                  color: "#3d3d3daf",
+                  fontSize: "22px",
+                }}
+              >
+                {" "}
+                EUR
+              </span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProductDetails;

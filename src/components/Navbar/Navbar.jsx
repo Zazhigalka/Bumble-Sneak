@@ -6,19 +6,31 @@ import account from "./imgs/account.png";
 import favourite from "./imgs/favourite.png";
 import cart from "./imgs/cart.png";
 import "typeface-montserrat";
+import { ADMIN } from "../../helpers/consts";
+import { useAuth } from "../contexts/AuthContextProvider";
 
 const Navbar = () => {
   const pagesLeft = [
-    { name: "NEW", link: "/admin", id: 1 },
+    { name: "HOME", link: "/", id: 1 },
     { name: "SNEAKERS", link: "/products", id: 2 },
-    { name: "WOMEN", link: "/", id: 3 },
-    { name: "MEN", link: "/", id: 4 },
+    { name: "WOMEN", link: "/women", id: 3 },
+    { name: "MEN", link: "/men", id: 4 },
   ];
+
+  const {
+    handleLogout,
+    user: { email },
+  } = useAuth();
 
   return (
     <div className="navbar">
       <div className="container">
         <ul className="navbar__left_ul">
+          {email === ADMIN ? (
+            <a className="navbar__link" href="/admin">
+              <li className="navbar__li">NEW</li>
+            </a>
+          ) : null}
           {pagesLeft.map((page) => (
             <a key={page.id} className="navbar__link" href={page.link}>
               <li className="navbar__li">{page.name}</li>
