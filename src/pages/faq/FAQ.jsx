@@ -61,7 +61,7 @@ const FAQ = () => {
   return (
     <div className="faq">
         <span className="faq__titles">
-        <p className="faq__title">FAQ</p>
+        <p className="faq__page-title">FAQ</p>
       <p className="faq__shipping_title">Shipping</p>
         </span>
    

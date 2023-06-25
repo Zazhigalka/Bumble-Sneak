@@ -1,0 +1,112 @@
+.personal-account {
+  width: 82%;
+  margin-bottom: 10rem;
+
+}
+.pa__titles {
+  font-family: "Montserrat";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 18rem;
+  display: flex;
+  color: #3d3d3d;
+}
+.pa__container {
+  margin-left: 18rem;
+  margin-top: 4rem;
+  display: flex;
+  display: flex;
+  justify-content: center;
+}
+.pa__button_container {
+  border: 1px solid black;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  height: 33rem;
+}
+.pa__btns {
+  width: 17rem;
+  height: 4rem;
+  text-align: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1em;
+  background-color: #F3F3EE;
+  border: none;
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: #3d3d3d;
+  font-weight: 500;
+}
+.pa-btn2{
+    background-color: #ed910f;
+  }
+.clicked {
+  background-color: #ed910f;
+}
+.pa-btn6 {
+  margin-bottom: 3.5rem;
+}
+.pa-btn1 {
+  margin-top: 3.5rem;
+}
+/* .pa__links{
+text-decoration: none;
+  }
+  .pa__links:active{
+    color: #3D3D3D;
+  } */
+
+.pa__acc-details_container {
+  margin-left: 17rem;
+  font-family: "Montserrat";
+  margin-top: -1rem;
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+}
+.pa__acc-details_title {
+  color: rgba(61, 61, 61, 0.9);
+  font-size: 25px;
+  line-height: 31px;
+  font-family: "Montserrat";
+  margin-left: 34.3rem;
+  font-weight: 500;
+}
+.pa__acc-details_titles {
+  color: rgba(61, 61, 61, 0.9);
+  font-size: 20px;
+  line-height: 31px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+.pa-title1 {
+  margin-top: 0.5rem;
+}
+.pa__acc-details_inputs {
+  width: 25rem;
+  height: 3rem;
+}
+.pa__acc-details_select {
+  width: 10rem;
+  height: 3rem;
+  font-family: "Montserrat";
+}
+
+
+.pa_acc-details_btn {
+  margin-top: 3rem;
+  margin-left: 8rem;
+  width: 10rem;
+  height: 3rem;
+  background-color: #f3f3ee;
+  border: 1px solid rgba(61, 61, 61, 0.60);
+  font-family: "Montserrat";
+  color: rgba(61, 61, 61, 0.90);
+  font-size: 18px;
+  font-weight: 500;
+}

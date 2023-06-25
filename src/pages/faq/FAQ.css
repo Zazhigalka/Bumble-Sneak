@@ -9,11 +9,12 @@
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 13rem;
+    margin-left: 15rem;
     display: flex;    
+    color: #3D3D3D;
   }
   .faq__container {
-    margin-left: 13rem;
+    margin-left: 15rem;
     margin-top: 4rem;
     width: 78%;
     display: flex;
@@ -21,27 +22,28 @@
   }
   .faq__button_container{
     border: 1px solid black;
-    width: 46%;
+    width: 25rem;
     display: flex;
     flex-direction: column;
-    height: 33%;
+    height: 33rem;
   }
   .faq__btns{
     width: 17rem;
     height: 4rem;
     text-align: center;
     margin-left: 4rem;
-    margin-top: 1rem;
-    background-color: white;
-    border: 1px solid #3d3d3dcc;
+    margin-right: 4rem;
+    margin-top: 1em;
+    background-color: #F3F3EE;
+    border: none;
     font-family: "Montserrat";
     font-size: 20px;
-    color: #3D3D3D;
+    color: #3d3d3d;
     font-weight: 500;
   }
-  /* .f-btn2{
+  .f-btn2{
     background-color: #ed910f;
-  } */
+  }
   .clicked{
     background-color: #ed910f;
   }
@@ -81,4 +83,11 @@ line-height: 31px;
     list-style-type: none;
     margin-top: 1rem;
     margin-bottom: 2rem;
+  }
+  .pa__acc-details_options{
+    color: rgba(61, 61, 61, 0.90);
+    font-size: 18px;
+    line-height: 31px;
+    font-family: "Montserrat";
+    /* font-weight: 500; */
   }

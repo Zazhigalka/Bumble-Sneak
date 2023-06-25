@@ -11,6 +11,9 @@ import FAQ from "../pages/faq/FAQ";
 import FAQshipping from "../pages/faq/FAQshipping";
 import Payment from "../pages/payment/Payment";
 import PaymentSuccess from "../pages/payment/PaymentSuccess";
+import Auth from "../pages/auth/Auth";
+import PersonalAccount from "../pages/personal account/PersonalAccount";
+import Checkout from "../pages/checkout/Checkout";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -68,6 +71,21 @@ const MainRoutes = () => {
       link: "/paymentsuccess",
       element: <PaymentSuccess/>,
       id: 11,
+    },
+    {
+      link: "/auth",
+      element: <Auth/>,
+      id: 12,
+    },
+    {
+      link: "/personal",
+      element: <PersonalAccount/>,
+      id: 13,
+    },
+    {
+      link: "/checkout",
+      element: <Checkout/>,
+      id: 14,
     },
   ];
   return (

@@ -1,0 +1,132 @@
+.auth__container {
+  display: flex;
+  justify-content: center;
+}
+.auth {
+  width: 74rem;
+  background-color: rgba(230, 232, 221, 0.5);
+  height: 52rem;
+  margin-top: 2rem;
+  margin-left: 2.4rem;
+  margin-bottom: 4rem;
+}
+.auth__info {
+  margin-left: 10rem;
+  margin-top: 5rem;
+  color: rgba(61, 61, 61, 0.9);
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  display: flex;
+}
+.auth__info_left {
+  width: 29rem;
+}
+
+.auth__info_title {
+  margin-bottom: 0.5rem;
+}
+.auth__info_inputs {
+  margin-bottom: 3rem;
+  width: 25rem;
+  height: 3.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.auth__info_input2 {
+  margin-bottom: 0;
+}
+
+.auth__info_right {
+  width: 26rem;
+  margin-top: 1.7rem;
+}
+.auth__info_right-ul {
+  font-family: "Montserrat";
+  color: rgba(61, 61, 61, 0.9);
+  font-size: 21px;
+  line-height: 30px;
+  list-style-type: none;
+}
+
+.auth__info_right-li::before {
+  content: "\2022";
+  color: #ed910f;
+  margin-right: 1rem;
+  font-size: 30px;
+  margin-top: 1rem;
+}
+.auth__info_right-li{
+  margin-bottom: 2rem;
+}
+.air-li-3{
+    margin-bottom: 0rem;
+}
+.auth__btn {
+  width: 22rem;
+  margin-left: 11rem;
+  margin-top: -2rem;
+}
+.auth__login-text {
+  font-family: "Montserrat";
+  color: rgba(61, 61, 61, 0.9);
+  font-size: 28px;
+  line-height: 30px;
+  list-style-type: none;
+  margin-left: 20.4rem;
+  margin-top: 4rem;
+}
+.auth__btns_container {
+  margin-left: 10rem;
+  display: flex;
+
+}
+.auth__btns {
+  background-color: white;
+  width: 14rem;
+  height: 5rem;
+  border: 1px solid rgba(61, 61, 61, 0.9);
+  border-radius: 5px;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgba(61, 61, 61, 0.9);
+  font-family: "Montserrat";
+  text-align: center;
+
+}
+.a-btn2 {
+  margin-left: 3rem;
+  color: rgba(61, 61, 61, 0.9);
+  font-family: 28rem;
+}
+.auth__account_texts-container{
+    margin-top: -1rem;
+
+}
+.auth__account_texts12{
+    display: flex;
+}
+.auth__account-texts{
+    font-size: 21px;
+    font-weight: 500;
+    color: rgba(61, 61, 61, 0.9);
+    font-family: "Montserrat";
+}
+.aa-text1,.aa-text3{
+    margin-left: 8.5rem;
+    margin-bottom: 0;
+
+}
+.aa-text2{
+    margin-left: 3rem;
+  text-decoration: underline;
+
+}
+
+.aa-text3{
+    margin-top: 0rem;
+  text-decoration: underline;
+
+}
