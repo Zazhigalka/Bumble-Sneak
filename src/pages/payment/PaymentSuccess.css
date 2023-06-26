@@ -40,4 +40,5 @@
 
 .paymentSuccess__btn:hover {
   cursor: pointer;
+  background-color: #e9a340e8;
 }
