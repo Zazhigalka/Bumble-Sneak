@@ -12,8 +12,17 @@ const Footer = () => {
           <li className="footer__li">Customer Service</li>
           <li className="footer__li">Live Chat</li>
           <li className="footer__li">Whats App</li>
-          <li className="footer__li">FAQ</li>
-          <li className="footer__li">Shipping</li>
+          <li className="footer__li">
+            <a className="footer__li_links" href="./Faq">
+              FAQ
+            </a>
+          </li>
+          <li className="footer__li">
+            <a className="footer__li_links" href="./Faq">
+              Shipping
+            </a>
+          </li>
+
           <li className="footer__li">Returns</li>
           <li className="footer__li">Contacts</li>
         </ul>
@@ -22,13 +31,25 @@ const Footer = () => {
           <li className="footer__li">Information</li>
           <li className="footer__li">Reviews</li>
           <li className="footer__li">Stores</li>
-          <li className="footer__li">Blog</li>
+          <li className="footer__li">
+            <a className="footer__li_links" href="./Blog">
+              Blog
+            </a>
+          </li>
         </ul>
 
         <ul className="footer__ul">
           <li className="footer__li">Categories</li>
-          <li className="footer__li">Giftcard</li>
-          <li className="footer__li">Sneakers</li>
+          <li className="footer__li">
+            <a className="footer__li_links" href="./Certificate">
+              Giftcard
+            </a>
+          </li>
+          <li className="footer__li">
+            <a className="footer__li_links" href="/products">
+              Sneakers
+            </a>
+          </li>
         </ul>
 
         <ul className="footer__ul">

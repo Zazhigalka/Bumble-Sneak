@@ -25,11 +25,17 @@
   font-size: 25px;
   font-weight: 500;
 }
-.footer__li:hover {
+.footer__li_links{
+  text-decoration: none;
+  color: black;
+}
+.footer__li:hover, .footer__li_links:hover{
   color: #ed910fa1;
+  cursor: pointer;
 }
 .socials:hover {
   transform: scale(1.25);
+  cursor: pointer;
 }
 
 .socials {

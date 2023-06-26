@@ -6,7 +6,6 @@ import AdminPage from "../pages/AdminPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import Certificate from "../pages/certificate/Certificate";
 import Blog from "../pages/blog/Blog";
-
 import Auth from "../components/auth/Auth";
 import ProductDetails from "../components/products/productDetails/ProductDetails";
 import ProductMen from "../components/products/productGender/ProductMen";
@@ -16,6 +15,9 @@ import FAQ from "../pages/faq/FAQ";
 import FAQshipping from "../pages/faq/FAQshipping";
 import Payment from "../pages/payment/Payment";
 import PaymentSuccess from "../pages/payment/PaymentSuccess";
+import PersonalAccount from "../pages/personal account/PersonalAccount";
+import Checkout from "../pages/checkout/Checkout";
+import Cart from "../pages/cart/Cart";
 import EditProductPage from "../pages/EditProductPage";
 
 const MainRoutes = () => {
@@ -76,29 +78,49 @@ const MainRoutes = () => {
       id: 11,
     },
     {
+      link: "/auth",
+      element: <Auth />,
+      id: 12,
+    },
+    {
+      link: "/personal",
+      element: <PersonalAccount />,
+      id: 13,
+    },
+    {
+      link: "/checkout",
+      element: <Checkout />,
+      id: 14,
+    },
+    {
+      link: "/cart",
+      element: <Cart />,
+      id: 15,
+    },
+    {
       link: "/faq",
       element: <FAQ />,
-      id: 12,
+      id: 16,
     },
     {
       link: "/faq-shipping",
       element: <FAQshipping />,
-      id: 13,
+      id: 17,
     },
     {
       link: "/payment",
       element: <Payment />,
-      id: 14,
+      id: 18,
     },
     {
       link: "/paymentsuccess",
       element: <PaymentSuccess />,
-      id: 15,
+      id: 19,
     },
     {
       link: "/edit/:id",
       element: <EditProductPage />,
-      id: 16,
+      id: 20,
     },
   ];
 

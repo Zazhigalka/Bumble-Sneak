@@ -39,7 +39,7 @@
   justify-content: space-between;
   list-style-type: none;
   margin: auto;
-  width: 60%;
+  width: 68%;
 }
 
 .certificate__imgs:hover {
@@ -92,12 +92,13 @@
   color: #3d3d3dcc, 80%;
 }
 .certificate__amount_input {
-  width: 12rem;
-  height: 2rem;
+  width: 22rem;
+  height: 3rem;
+  margin-top:0.5rem ;
 }
 .certificate__currency {
-  width: 3.5rem;
-  height: 2.3rem;
+  width: 4rem;
+  height: 3.3rem;
 }
 
 .certificate__type-details,
@@ -156,8 +157,9 @@
 }
 
 .certificate__email_input {
-  width: 19rem;
-  height: 2rem;
+  width: 22rem;
+  height: 3rem;
+  margin-top:0.5rem ;
 }
 
 .certificate__type_text-bold {
