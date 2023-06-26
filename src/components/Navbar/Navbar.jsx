@@ -11,8 +11,13 @@ import { useAuth } from "../contexts/AuthContextProvider";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
+import PopupState, {
+  bindTrigger,
+  bindMenu,
+  bindPopover,
+} from "material-ui-popup-state";
 import menu from "../../img/list.png";
+import { Popover } from "@mui/material";
 
 const Navbar = () => {
   const pagesLeft = [
@@ -44,12 +49,14 @@ const Navbar = () => {
                     height: "30px",
                     width: "30px",
                     minWidth: "30px",
+                    backgroundColor: "#ff9900",
                   }}
                   variant="contained"
                   {...bindTrigger(popupState)}
                 >
                   <img width={"10px"} src={menu} alt="" />
                 </Button>
+
                 <Menu {...bindMenu(popupState)}>
                   <ul className="">
                     {email === ADMIN ? (
@@ -117,10 +124,7 @@ const Navbar = () => {
               CERTIFICATE
             </a>
           </li>
-          <li className="navbar__li navbar__li-texts">
-            <span className="navbar__li_a">SEARCH</span>
-            <img src={search} alt="" className="icons navbar__search" />
-          </li>
+
           <li className="navbar__li navbar__li-texts">
             <a href="/personal" className="navbar__li_link">
             <span className="navbar__li_a">ACCOUNT</span>{" "}
