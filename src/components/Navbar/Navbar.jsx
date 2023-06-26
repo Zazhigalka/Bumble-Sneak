@@ -126,14 +126,18 @@ const Navbar = () => {
           </li>
 
           <li className="navbar__li navbar__li-texts">
+            <a href="/personal" className="navbar__li_link">
             <span className="navbar__li_a">ACCOUNT</span>{" "}
             <img src={account} alt="" className="icons navbar__account" />
+            </a>
           </li>
           <li className="navbar__li">
             <img src={favourite} alt="" className="icons navbar__favourite" />
           </li>
           <li className="navbar__li">
+          <a href="/cart" className="navbar__cart_link">
             <img src={cart} alt="" className="icons navbar__cart" />
+            </a>
           </li>
         </ul>
       </div>

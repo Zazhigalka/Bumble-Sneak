@@ -1,0 +1,311 @@
+.checkout__page-title,
+.checkout__title,
+.checkout__inp-titles {
+  font-family: "Montserrat";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  color: #3d3d3d;
+}
+.checkout__page-title {
+  margin-left: 18rem;
+}
+.checkout__title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 3rem;
+}
+.checkout{
+  width: 99%;
+  display: flex;
+  justify-content: start;
+}
+.checkout__container {
+  margin-top: 4rem;
+}
+.checkout__inputs_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.checkout__inp-titles {
+  font-size: 21px;
+  font-weight: 400;
+}
+.checkout__inp_left {
+  margin-right: 8rem;
+}
+.checkout__inputs {
+  margin-bottom: 3rem;
+  width: 22rem;
+  height: 3.5rem;
+  background-color: white;
+  border: 1px solid rgba(61, 61, 61, 0.9);
+}
+.countries {
+  margin-bottom: 3rem;
+  margin-right: 1rem;
+  width: 22rem;
+  height: 3.8rem;
+  background-color: white;
+  border: 1px solid rgba(61, 61, 61, 0.9);
+  /* margin-left: 8rem; */
+}
+option {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 00;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3d3d3d;
+}
+
+.payment-shipping {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* !STYLES SHIPPING METHOD START */
+.checkout__shipping-details {
+  margin-top: 5rem;
+  width: 18rem;
+  margin-right: 13rem;
+}
+.checkout__shipping {
+  font-family: "Montserrat";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  color: #3d3d3dcc, 80%;
+  margin-bottom: 2rem;
+}
+.checkout__shipping_btns {
+  background-color: white;
+  border: 1px solid #3d3d3dcc;
+  width: 18rem;
+  height: 4rem;
+  margin-top: 0.5rem;
+}
+.checkout__shipping_btns-container {
+  display: flex;
+  flex-direction: column;
+}
+.checkout__shipping_btn2,
+.checkout__shipping_btn3 {
+  margin-top: 1rem;
+}
+
+.checkout__shipping_text {
+  width: 14rem;
+  text-align: left;
+  color: #3d3d3d99;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1rem;
+}
+.checkout__shipping_content {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+.checkout__shipping_circle {
+  width: 2.2rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 3px solid rgb(76, 76, 76);
+}
+.sh-circle1,
+.sh-circle2,
+.sh-circle3 {
+  background-color: white;
+}
+
+.checkout__shipping_cards {
+  margin-left: 0.5rem;
+  width: 4rem;
+  min-height: auto;
+}
+.checkout__shipping_ups {
+  width: 2.3rem;
+  margin-left: 1rem;
+  margin-right: 0.6rem;
+}
+.clicked {
+  background-color: #ed910f;
+}
+/* !STYLES SHIPPING METHOD END*/
+
+/* !STYLES PAYMENT METHOD START */
+.checkout__payment-details {
+  margin-top: 5rem;
+  width: 18rem;
+}
+.checkout__payment {
+  font-family: "Montserrat";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  color: #3d3d3dcc, 80%;
+  margin-bottom: 2rem;
+}
+.checkout__payment_btns {
+  background-color: white;
+  border: 1px solid #3d3d3dcc;
+  width: 18rem;
+  height: 4rem;
+  margin-top: 0.5rem;
+}
+.checkout__payment_btns-container {
+  display: flex;
+  flex-direction: column;
+}
+.checkout__payment_btn2,
+.checkout__payment_btn3 {
+  margin-top: 1rem;
+}
+.checkout__payment_text {
+  width: 14rem;
+  text-align: left;
+  color: #3d3d3d99;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1rem;
+}
+.checkout__payment_content {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+.checkout__payment_circle {
+  width: 2.2rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 3px solid rgb(76, 76, 76);
+}
+.p-circle1,
+.p-circle2,
+.p-circle3 {
+  background-color: white;
+}
+.clicked {
+  background-color: #ed910f;
+}
+.checkout__payment_cards {
+  margin-left: 0.5rem;
+  width: 4rem;
+  min-height: auto;
+}
+.checkout__payment_mastercard {
+  width: 2.8rem;
+  margin-left: 1rem;
+  margin-right: 0.6rem;
+}
+.checkout__payment_paypal {
+  margin-left: 0.6rem;
+  margin-right: -0.2rem;
+}
+/* !STYLES PAYMENT METHOD END */
+
+/* ! PRODUCT STARTS*/
+
+.checkout__product {
+    width: 72%;
+  margin-top: 10rem;
+}
+
+.checkout__product-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.checkout__product-title {
+  margin-left: 4rem;
+  font-family: "Montserrat";
+  font-size: 28px;
+}
+.checkout__product-descr {
+  width: 15rem;
+  margin-left: 4rem;
+  font-family: "Montserrat";
+}
+.checkout__product-size-price {
+  margin-left: 4rem;
+  font-size: 30px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.checkout__product-image {
+  width: 18rem;
+  height: 18rem;
+}
+.checkout__product-size-title,
+.checkout__product-size-num,
+.checkout__product-size-country {
+  font-size: 23px;
+  font-family: "Montserrat";
+  height: 0;
+  margin-top: 1.3rem;
+  margin-left: 5rem;
+  font-weight: 500;
+}
+.checkout__product-size-num {
+  text-decoration: underline;
+}
+.checkout__product-size-country {
+  margin-left: 1rem;
+  color: #3d3d3dcc;
+}
+
+/* !PAYMENT START */
+.checkout__price {
+  display: flex;
+  flex-direction: column;
+ width:38%;
+  margin-left: 16rem;
+  margin-top: 6rem;
+}
+.checkout__price_title1 {
+  margin-right: 12rem;
+
+}
+.checkout__price_title2 {
+  margin-right: 7.6rem;
+
+}
+.checkout__price_title3 {
+  margin-right: 14.9rem;
+
+}
+.checkout__price_prices,
+.checkout__price_title3,
+.checkout__price_title2,
+.checkout__price_title1 {
+  font-size: 26px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #3d3d3d;
+}
+
+.checkout__btn{
+    margin-top: 6rem;
+    margin-left: -3rem;
+    width: 35rem;
+}
+/* ! PRODUCT END*/

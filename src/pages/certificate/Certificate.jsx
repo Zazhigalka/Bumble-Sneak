@@ -218,7 +218,7 @@ const Certificate = () => {
               id=""
             />
           </div>
-          <div className="certificate__payment-details"></div>
+
           <div className="certificate__payment-details">
             <p className="certificate__payment">Select a payment method</p>
             <div className="certificate__payment_btns-container">
