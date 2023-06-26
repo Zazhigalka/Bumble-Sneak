@@ -63,23 +63,28 @@
   margin-left: 8rem;
   font-size: 35px;
   font-weight: 500;
-  color: rgba(61, 61, 61, 0.90);
+  color: rgba(61, 61, 61, 0.9);
   font-family: "Montserrat";
   border-radius: 5px;
 }
 
-.payment__text{
+.payment__btn:hover {
+  cursor: pointer;
+  background-color: #e9a340e8;
+}
+
+.payment__text {
   font-size: 20px;
   font-family: "Montserrat";
   color: rgba(61, 61, 61, 0.9);
-margin-left: 5.4rem;
+  margin-left: 5.4rem;
 }
-.payment__text_under{
+.payment__text_under {
   font-size: 23px;
   font-family: "Montserrat";
   color: rgba(61, 61, 61, 0.9);
-margin-left:18.8rem;
-margin-top: -6rem;
+  margin-left: 18.8rem;
+  margin-top: -6rem;
 
   text-decoration: underline;
 }

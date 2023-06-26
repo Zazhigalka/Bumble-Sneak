@@ -4,7 +4,7 @@ import logo from "./imgs/logo.png";
 import search from "./imgs/search.png";
 import account from "./imgs/account.png";
 import favourite from "./imgs/favourite.png";
-import cart from "./imgs/cart.png";
+import cart__icon from "./imgs/cart.png";
 import "typeface-montserrat";
 import { ADMIN } from "../../helpers/consts";
 import { useAuth } from "../contexts/AuthContextProvider";
@@ -18,6 +18,8 @@ import PopupState, {
 } from "material-ui-popup-state";
 import menu from "../../img/list.png";
 import { Popover } from "@mui/material";
+import { useCart } from "../contexts/CartContextProvider";
+import { Badge } from "@mui/base";
 
 const Navbar = () => {
   const pagesLeft = [
@@ -26,6 +28,10 @@ const Navbar = () => {
     { name: "WOMEN", link: "/women", id: 3 },
     { name: "MEN", link: "/men", id: 4 },
   ];
+
+  const { cart } = useCart();
+
+  console.log(cart.products.length);
 
   const {
     handleLogout,
@@ -127,16 +133,28 @@ const Navbar = () => {
 
           <li className="navbar__li navbar__li-texts">
             <a href="/personal" className="navbar__li_link">
-            <span className="navbar__li_a">ACCOUNT</span>{" "}
-            <img src={account} alt="" className="icons navbar__account" />
+              <span className="navbar__li_a">ACCOUNT</span>{" "}
+              <img src={account} alt="" className="icons navbar__account" />
             </a>
           </li>
           <li className="navbar__li">
             <img src={favourite} alt="" className="icons navbar__favourite" />
           </li>
           <li className="navbar__li">
-          <a href="/cart" className="navbar__cart_link">
-            <img src={cart} alt="" className="icons navbar__cart" />
+            <a href="/cart" className="navbar__cart_link">
+              <img src={cart__icon} alt="" className="icons navbar__cart" />
+              {/* <Badge
+                badgeContent={cart.products.length}
+                color="primary"
+              ></Badge> */}
+              <Badge
+                className="badge"
+                badgeContent={cart.products.length}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+              ></Badge>
             </a>
           </li>
         </ul>
