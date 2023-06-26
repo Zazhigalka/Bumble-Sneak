@@ -33,10 +33,10 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const popular = [
-    { name: "ALL SNEAKERS", link: "/", img: allsneakers, id: 1 },
+    { name: "ALL SNEAKERS", link: "/products", img: allsneakers, id: 1 },
     { name: "MEN", link: "/men", img: men, id: 2 },
     { name: "WOMEN", link: "/women", img: women, id: 3 },
-    { name: "KIDS", link: "/", img: kids, id: 4 },
+    { name: "KIDS", link: "#kids-container", img: kids, id: 4 },
   ];
 
   const latest = [
@@ -160,7 +160,7 @@ const Home = () => {
       <div className="container">
         <div className="home__popular">
           <h3 className="home__popular_title">Latest Sneakers</h3>
-          <div className="home__popular_card">
+          <div className="home__popular_card">  
             {latest.map((card) => (
               <div
                 className="card__latest"
@@ -214,7 +214,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container" id="kids-container">
         <div className="kids">
           <h2 className="kids__title">Kids</h2>
           <ul className="kids__list">
