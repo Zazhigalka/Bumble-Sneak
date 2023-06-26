@@ -15,7 +15,7 @@ import { useNavigate } from "react-router";
 const Certificate = () => {
   const navigate = useNavigate();
 
-  const [isClickedDesign1, setIsClickedDesign1] = useState(false);
+  const [isClickedDesign1, setIsClickedDesign1] = useState(true);
   const [isClickedDesign2, setIsClickedDesign2] = useState(false);
   const [isClickedDesign3, setIsClickedDesign3] = useState(false);
   const [isClickedDesign4, setIsClickedDesign4] = useState(false);

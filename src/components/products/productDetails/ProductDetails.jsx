@@ -6,11 +6,15 @@ import edit_icon from "../../../img/edit_button.png";
 import addToCart from "../../../img/add_to_cart.png";
 import buyToNow from "../../../img/buy_to_now.png";
 import { useProducts } from "../../contexts/ProductContextProvider";
+import { ADMIN } from "../../../helpers/consts";
+import { useAuth } from "../../contexts/AuthContextProvider";
 
 const ProductDetails = () => {
   const { getProductDetails, productDetails, deleteProduct } = useProducts();
   const { id } = useParams();
-
+  const {
+    user: { email },
+  } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -29,19 +33,24 @@ const ProductDetails = () => {
           src={productDetails?.image}
           alt=""
         />
-        <img
-          onClick={() => deleteProduct(productDetails?.id)}
-          className="one__product_delete"
-          src={delete_icon}
-          alt=""
-        />
-        <img
-          onClick={() => navigate(`/edit/${productDetails?.id}`)}
-          className="one__product_edit"
-          src={edit_icon}
-          alt=""
-        />
-
+        {email === ADMIN ? (
+          <>
+            <img
+              onClick={() => deleteProduct(productDetails?.id)}
+              className="one__product_delete"
+              src={delete_icon}
+              alt=""
+            />
+            <img
+              onClick={() => navigate(`/edit/${productDetails?.id}`)}
+              className="one__product_edit"
+              src={edit_icon}
+              alt=""
+            />
+          </>
+        ) : (
+          ""
+        )}
         <div className="one__product_info">
           <div className="one__product_title">
             <h3>{productDetails?.title}</h3>
@@ -95,7 +104,6 @@ const ProductDetails = () => {
             </h2>
           </div>
         </div>
-
         <img className="add__to_cart" src={addToCart} alt="  " />
         <img className="buy__to_now" src={buyToNow} alt="  " />
       </div>
