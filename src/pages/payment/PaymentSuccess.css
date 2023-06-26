@@ -1,0 +1,43 @@
+.paymentSuccess__container {
+  display: flex;
+  justify-content: center;
+}
+.paymentSuccess {
+  width: 35rem;
+  background-color: rgba(230, 232, 221, 0.5);
+  height: auto;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-left: 2.4rem;
+}
+.paymentSuccess__info {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  color: rgba(61, 61, 61, 0.9);
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.paymentSuccess__btn {
+  text-align: center;
+  background-color: #ed910fe5;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 6rem;
+  height: 4rem;
+  margin-left: -1rem;
+  margin-top: 3rem;
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+  font-family: "Montserrat";
+  border-radius: 5px;
+}
+
+.paymentSuccess__btn:hover {
+  cursor: pointer;
+}

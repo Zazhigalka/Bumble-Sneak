@@ -169,6 +169,7 @@
   display: flex;
   margin-top: 4%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -286,7 +287,6 @@
   background-size: 100%;
   width: 100%;
   height: 472px;
-  background-color: #3d3d3d;
 }
 
 .newIn__right_down {
@@ -296,7 +296,6 @@
   background-size: 100%;
   width: 100%;
   height: 611px;
-  background-color: #3d3d3d;
 }
 
 .legend {
@@ -422,7 +421,6 @@
 }
 
 .asics__right_down {
-  background-color: #3d3d3d;
   height: 445px;
 }
 
@@ -646,3 +644,418 @@
   margin: auto;
 }
 /* todo company */
+
+/* adaptive */
+@media (max-width: 1870px) {
+  .home__main_btn_title,
+  .home__main_btn {
+    display: none;
+  }
+  .newIn {
+    flex-direction: column;
+  }
+
+  .newIn__left {
+    width: 100%;
+  }
+  .newIn__left_up {
+    height: 996px;
+    margin-bottom: 2%;
+  }
+  .newIn__left_up_btn {
+    margin-top: 40%;
+    margin-left: 19%;
+    width: 558px;
+  }
+  .newIn__left_down {
+    height: 778px;
+    margin-bottom: 2%;
+  }
+  .legend {
+    width: 444px;
+  }
+  .eur90 {
+    width: 130px;
+  }
+
+  .newIn__right {
+    width: 100%;
+  }
+  .newIn__right_up {
+    height: 1175px;
+  }
+  .newIn__right_down {
+    height: 1522px;
+    border: 1px solid #00000094;
+  }
+}
+
+@media (max-width: 1830px) {
+  .legend {
+    bottom: 7%;
+  }
+  .eur90 {
+    bottom: 7%;
+  }
+}
+
+@media (max-width: 1815px) {
+  .home__main_sale {
+    font-size: 130px;
+  }
+}
+
+@media (max-width: 1780px) {
+  .home__main_sale {
+    font-size: 100px;
+  }
+  .home__main_title {
+    margin-top: 7%;
+  }
+  .home__main_black,
+  .home__main_friday {
+    font-size: 180px;
+  }
+}
+
+@media (max-width: 1750px) {
+  .newIn__left_up_btn {
+    width: 535px;
+  }
+  .legend {
+    bottom: 11%;
+  }
+  .eur90 {
+    bottom: 11%;
+  }
+  .newIn__right_down {
+    display: none;
+  }
+  .asics__right_down_btn {
+    bottom: 10%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .newIn__left_up_btn {
+    width: 511px;
+  }
+  .kids {
+    display: none;
+  }
+  .asics {
+    margin-bottom: 6%;
+  }
+  .asics__right_down_btn {
+    bottom: 14%;
+  }
+  .asics__right_down_title {
+    bottom: 14%;
+  }
+  .asics__right_down_descr {
+    bottom: 26%;
+  }
+}
+
+@media (max-width: 1650px) {
+  .newIn__left_up_btn {
+    width: 496px;
+  }
+
+  .legend,
+  .eur90 {
+    bottom: 16%;
+  }
+  .asics__right_down_btn {
+    bottom: 18%;
+  }
+  .asics__right_down_title {
+    bottom: 18%;
+  }
+  .asics__right_down_descr {
+    bottom: 30%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .newIn__left_up_btn {
+    width: 483px;
+  }
+
+  .legend,
+  .eur90 {
+    bottom: 18%;
+  }
+}
+
+@media (max-width: 1550px) {
+  .newIn__left_up_btn {
+    width: 466px;
+  }
+
+  .legend,
+  .eur90 {
+    bottom: 21%;
+  }
+
+  .asics__right_down_btn {
+    bottom: 21%;
+  }
+  .asics__right_down_title {
+    bottom: 21%;
+  }
+  .asics__right_down_descr {
+    bottom: 33%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .newIn__left_up_btn {
+    width: 455px;
+  }
+  .legend,
+  .eur90 {
+    bottom: 23%;
+  }
+  .asics__right_down_btn {
+    bottom: 24%;
+  }
+  .asics__right_down_title {
+    bottom: 24%;
+  }
+  .asics__right_down_descr {
+    bottom: 36%;
+  }
+}
+
+@media (max-width: 1450px) {
+  .slide {
+    top: 4%;
+  }
+  .newIn__left_up_btn {
+    width: 438px;
+  }
+  .legend,
+  .eur90 {
+    bottom: 26%;
+  }
+  .asics__right_down_btn {
+    bottom: 27%;
+  }
+  .asics__right_down_title {
+    bottom: 27%;
+  }
+  .asics__right_down_descr {
+    bottom: 39%;
+  }
+}
+
+@media (max-width: 1430px) {
+  .home__main_sale {
+    font-size: 100px;
+  }
+  .home__main_title {
+    margin-top: 5%;
+  }
+  .home__main_black,
+  .home__main_friday {
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .card {
+    margin-top: 2%;
+  }
+  .newIn__left_up_btn {
+    width: 420px;
+  }
+  .legend,
+  .eur90 {
+    bottom: 4%;
+  }
+  .asics__right_down_btn {
+    bottom: 27%;
+  }
+  .asics__right_down_title {
+    bottom: 27%;
+  }
+  .asics__right_down_descr {
+    bottom: 39%;
+  }
+  .newIn__left_up {
+    height: 745px;
+  }
+  .newIn__left_down {
+    height: 582px;
+  }
+  .newIn__right_up {
+    height: 880px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .legend,
+  .eur90 {
+    bottom: 7%;
+  }
+}
+@media (max-width: 1350px) {
+  .legend,
+  .eur90 {
+    bottom: 10%;
+  }
+  .asics__right_down_btn {
+    bottom: 31%;
+  }
+  .asics__right_down_title {
+    bottom: 30%;
+  }
+  .asics__right_down_descr {
+    bottom: 42%;
+  }
+  .newIn__left_up_btn {
+    width: 409px;
+  }
+  .asics__right_up__btn {
+    width: 250px;
+  }
+  .asics__right_up_title {
+    font-size: 36px;
+    color: #ffff;
+  }
+  .asics__right_up_descr {
+    font-size: 32px;
+    color: #ffff;
+  }
+  .asics__left__btn {
+    width: 240px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .legend,
+  .eur90 {
+    bottom: 11%;
+  }
+  .asics__right_down_btn {
+    bottom: 34%;
+    left: 44%;
+    width: 240px;
+  }
+  .asics__right_down_title {
+    bottom: 34%;
+  }
+  .asics__right_down_descr {
+    bottom: 45%;
+  }
+  .newIn__left_up_btn {
+    width: 391px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .newIn__left_up_btn {
+    width: 376px;
+  }
+  .legend,
+  .eur90 {
+    bottom: 15%;
+  }
+  .asics__right_down_btn {
+    bottom: 37%;
+    left: 44%;
+  }
+  .asics__right_down_title {
+    bottom: 37%;
+  }
+  .asics__right_down_descr {
+    bottom: 48%;
+  }
+}
+
+@media (max-width: 1210px) {
+  .newIn__left_up_btn {
+    width: 360px;
+  }
+  .home__main_sale {
+    font-size: 100px;
+  }
+  .home__main_title {
+    margin-top: 5%;
+  }
+  .home__main_black,
+  .home__main_friday {
+    font-size: 120px;
+  }
+  .legend,
+  .eur90 {
+    bottom: 18%;
+  }
+  .slide {
+    top: 4.3%;
+    font-size: 35px;
+  }
+  .asics__right_down_btn {
+    bottom: 40%;
+  }
+  .asics__right_down_title {
+    bottom: 40%;
+  }
+  .asics__right_down_descr {
+    bottom: 51%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .newIn__left_up_btn {
+    width: 348px;
+  }
+  .legend,
+  .eur90 {
+    bottom: 21%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .newIn__left_down {
+    height: 458px;
+  }
+  .newIn__right_up {
+    height: 691px;
+  }
+  .legend,
+  .eur90 {
+    bottom: 4%;
+  }
+  .asics__right_down_btn {
+    bottom: 45%;
+    left: 47%;
+    width: 38%;
+  }
+  .asics__right_down_title {
+    bottom: 45%;
+  }
+  .asics__right_down_descr {
+    bottom: 56%;
+  }
+}
+
+@media (max-width: 1046px) {
+  .home__popular_card {
+    justify-content: space-around;
+  }
+  .card {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .slide {
+    top: 4.1%;
+    font-size: 30px;
+  }
+  .home__down_line {
+    height: 55px;
+  }
+}

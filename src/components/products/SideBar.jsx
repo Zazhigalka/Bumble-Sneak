@@ -29,15 +29,15 @@ const SideBar = () => {
   }, [search]);
 
   return (
-    <Grid item md={3} sx={{ width: "15%" }}>
+    <div className="sidebar" md={3}>
       <Paper elevation={3} sx={{ padding: "1rem", boxShadow: "none" }}>
-        {/* <TextField
+        <TextField
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           fullWidth
           label="search..."
           variant="standard"
-        /> */}
+        />
         <FormControl>
           <FormLabel
             sx={{
@@ -202,7 +202,7 @@ const SideBar = () => {
           </RadioGroup>
         </FormControl>
       </Paper>
-    </Grid>
+    </div>
   );
 };
 

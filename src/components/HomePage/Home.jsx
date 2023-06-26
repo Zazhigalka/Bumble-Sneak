@@ -33,10 +33,10 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const popular = [
-    { name: "ALL SNEAKERS", link: "/products", img: allsneakers, id: 1 },
+    { name: "ALL SNEAKERS", link: "/", img: allsneakers, id: 1 },
     { name: "MEN", link: "/men", img: men, id: 2 },
     { name: "WOMEN", link: "/women", img: women, id: 3 },
-    { name: "KIDS", link: "/products", img: kids, id: 4 },
+    { name: "KIDS", link: "/", img: kids, id: 4 },
   ];
 
   const latest = [
@@ -162,28 +162,26 @@ const Home = () => {
           <h3 className="home__popular_title">Latest Sneakers</h3>
           <div className="home__popular_card">
             {latest.map((card) => (
-              <>
-                <div
-                  className="card__latest"
-                  key={card.id}
-                  style={{
-                    width: "312px",
-                    height: "307px",
-                  }}
-                >
-                  <div className="card__img_div">
-                    <img className="card__img latest" src={card.img} alt="" />
-                    <h5 style={{ opacity: 0.7 }} className="card__linked_buy">
-                      <span>Shop now </span>
-                      <img className="card__arrow" src={arrow} alt="" />
-                    </h5>
-                  </div>
-                  <div className="card__name_div">
-                    <h4 className="card__name">{card.name}</h4>
-                    <p className="card__descr">{card.descr}</p>
-                  </div>
+              <div
+                className="card__latest"
+                key={card.id}
+                style={{
+                  width: "312px",
+                  height: "307px",
+                }}
+              >
+                <div className="card__img_div">
+                  <img className="card__img latest" src={card.img} alt="" />
+                  <h5 style={{ opacity: 0.7 }} className="card__linked_buy">
+                    <span>Shop now </span>
+                    <img className="card__arrow" src={arrow} alt="" />
+                  </h5>
                 </div>
-              </>
+                <div className="card__name_div">
+                  <h4 className="card__name">{card.name}</h4>
+                  <p className="card__descr">{card.descr}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>

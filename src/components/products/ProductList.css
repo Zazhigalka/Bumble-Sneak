@@ -13,3 +13,9 @@
 .product__right_home:hover {
   cursor: pointer;
 }
+
+@media (max-width: 1824px) {
+  .product__right {
+    width: 75%;
+  }
+}

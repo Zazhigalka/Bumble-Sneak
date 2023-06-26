@@ -1,12 +1,36 @@
 .one__product {
   display: flex;
   font-family: montserrat;
+  width: 75%;
+  margin: auto;
+  margin-top: 120px;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
 }
 
 .one__product_info {
   display: flex;
   flex-direction: column;
   width: 26%;
+  margin-top: 8%;
+}
+
+.one__product_delete {
+  width: 40px;
+  position: absolute;
+  right: 10%;
+}
+
+.one__product_edit {
+  position: absolute;
+  width: 37px;
+  right: 10%;
+  top: 9%;
+}
+
+.one__product_delete:hover,
+.one__product_edit:hover {
+  cursor: pointer;
 }
 
 .one__product_title {
@@ -48,4 +72,24 @@
 
 .one__product_size {
   display: flex;
+}
+
+/* .one__product_buttons {
+  width: 100%;
+} */
+
+.add__to_cart {
+  position: absolute;
+  top: 66%;
+}
+
+.buy__to_now {
+  position: absolute;
+  top: 66.6%;
+  left: 320px;
+}
+
+.add__to_cart:hover,
+.buy__to_now:hover {
+  cursor: pointer;
 }

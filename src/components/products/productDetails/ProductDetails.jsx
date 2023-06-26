@@ -1,12 +1,17 @@
 import React, { useEffect } from "react";
-import { useProducts } from "../../contexts/ProductContextProvider";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "../productDetails/ProductDetails.css";
-import { Margin } from "@mui/icons-material";
+import delete_icon from "../../../img/delete_icon.png";
+import edit_icon from "../../../img/edit_button.png";
+import addToCart from "../../../img/add_to_cart.png";
+import buyToNow from "../../../img/buy_to_now.png";
+import { useProducts } from "../../contexts/ProductContextProvider";
 
 const ProductDetails = () => {
-  const { getProductDetails, productDetails } = useProducts();
+  const { getProductDetails, productDetails, deleteProduct } = useProducts();
   const { id } = useParams();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     getProductDetails(id);
@@ -14,7 +19,29 @@ const ProductDetails = () => {
   return (
     <div className="container">
       <div className="one__product">
-        <img width={"400px"} src={productDetails?.image} alt="" />
+        <img
+          width={"400px"}
+          style={{
+            marginRight: "6%",
+            marginBottom: "300px",
+            border: "2px solid #00000020",
+          }}
+          src={productDetails?.image}
+          alt=""
+        />
+        <img
+          onClick={() => deleteProduct(productDetails?.id)}
+          className="one__product_delete"
+          src={delete_icon}
+          alt=""
+        />
+        <img
+          onClick={() => navigate(`/edit/${productDetails?.id}`)}
+          className="one__product_edit"
+          src={edit_icon}
+          alt=""
+        />
+
         <div className="one__product_info">
           <div className="one__product_title">
             <h3>{productDetails?.title}</h3>
@@ -63,12 +90,14 @@ const ProductDetails = () => {
                   fontSize: "22px",
                 }}
               >
-                {" "}
                 EUR
               </span>
             </h2>
           </div>
         </div>
+
+        <img className="add__to_cart" src={addToCart} alt="  " />
+        <img className="buy__to_now" src={buyToNow} alt="  " />
       </div>
     </div>
   );

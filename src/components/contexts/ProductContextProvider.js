@@ -43,6 +43,18 @@ const ProductContextProvider = ({ children }) => {
     dispatch({ type: ACTIONS.GET_PRODUCTS, payload: data });
   };
 
+  //! patch request (UPDATE PRODUCT)
+  const saveEditedProduct = async (editedProduct) => {
+    await axios.patch(`${API}/${editedProduct.id}`, editedProduct);
+    navigate(`/products`);
+  };
+
+  //! delete request (DELETE)
+  const deleteProduct = async (id) => {
+    await axios.delete(`${API}/${id}`);
+    navigate("/products");
+  };
+
   //! get one product info
   const getProductDetails = async (id) => {
     const { data } = await axios.get(`${API}/${id}`);
@@ -71,6 +83,8 @@ const ProductContextProvider = ({ children }) => {
     fetchByParams,
     getProductDetails,
     productDetails: state.productDetails,
+    deleteProduct,
+    saveEditedProduct,
   };
   return (
     <productContext.Provider value={values}>{children}</productContext.Provider>

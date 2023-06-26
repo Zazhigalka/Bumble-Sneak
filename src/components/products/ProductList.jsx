@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useProducts } from "../contexts/ProductContextProvider";
 import ProductCard from "./ProductCard";
 import "./ProductList.css";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { Divider } from "@mui/material";
+import { Divider, Pagination } from "@mui/material";
 const ProductList = () => {
   const { getProducts, products } = useProducts();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -12,6 +12,23 @@ const ProductList = () => {
   }, [searchParams]);
 
   const navigate = useNavigate();
+
+  // pagination
+  const [page, setPage] = useState(1);
+  const itemsPerPage = 20;
+  const count = Math.ceil(products.length / itemsPerPage);
+
+  const handleChange = (e, p) => {
+    setPage(p);
+  };
+
+  function currentData() {
+    const begin = (page - 1) * itemsPerPage;
+    const end = begin + itemsPerPage;
+    return products.slice(begin, end);
+  }
+
+  // pagination
   return (
     <>
       <div className="product__right">
@@ -41,10 +58,11 @@ const ProductList = () => {
             </div>
             <Divider sx={{ marginTop: "20px", height: "2px" }} />
           </div>
-          {products.map((item) => (
+          {currentData().map((item) => (
             <ProductCard key={item.id} item={item} />
           ))}
         </div>
+        <Pagination count={count} page={page} onChange={handleChange} />
       </div>
     </>
   );

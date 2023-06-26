@@ -7,6 +7,7 @@
 .products__men_shoes {
   display: flex;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .products__men_title {
