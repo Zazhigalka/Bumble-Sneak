@@ -1,0 +1,18 @@
+.radio__group {
+  display: flex;
+  justify-content: start;
+}
+
+.radio__group h3 {
+  color: #000000a7;
+}
+
+.sidebar {
+  width: 15%;
+}
+
+@media (max-width: 1824px) {
+  .sidebar {
+    width: 20%;
+  }
+}

@@ -27,13 +27,25 @@
   font-weight: 400;
   text-align: center;
 }
+
+.certificate__border {
+  border: 2px solid #ed910f;
+}
+
 .certificate__design_ul {
   padding: 0;
   margin-top: 3rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style-type: none;
+  margin: auto;
+  width: 60%;
 }
+
+.certificate__imgs:hover {
+  cursor: pointer;
+}
+
 .c-img1,
 .c-img2,
 .c-img3 {
@@ -132,6 +144,10 @@
   border-radius: 50%;
   border: 3px solid rgb(76, 76, 76);
 }
+
+.certificate__type_circle:hover {
+  cursor: pointer;
+}
 .t-circle1,
 .t-circle2 {
   background-color: white;
@@ -189,6 +205,10 @@
   border-radius: 50%;
   border: 3px solid rgb(76, 76, 76);
 }
+
+.certificate__payment_circle:hover {
+  cursor: pointer;
+}
 .p-circle1,
 .p-circle2,
 .p-circle3 {
@@ -215,4 +235,12 @@
 .certificate__btn {
   margin-top: 3rem;
   width: 20rem;
+}
+
+.certificate__btn:hover {
+  cursor: pointer;
+}
+
+.buygif:hover {
+  cursor: pointer;
 }

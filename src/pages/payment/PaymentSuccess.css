@@ -37,3 +37,7 @@
   font-family: "Montserrat";
   border-radius: 5px;
 }
+
+.paymentSuccess__btn:hover {
+  cursor: pointer;
+}

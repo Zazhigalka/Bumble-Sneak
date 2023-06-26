@@ -39,11 +39,53 @@ const ProductContextProvider = ({ children }) => {
 
   // ! get request (READ)
   const getProducts = async () => {
-    const { data } = await axios(`${API}`);
+    const { data } = await axios(`${API}${window.location.search}`);
     dispatch({ type: ACTIONS.GET_PRODUCTS, payload: data });
   };
 
-  const values = { addProduct, getProducts, products: state.products };
+  //! patch request (UPDATE PRODUCT)
+  const saveEditedProduct = async (editedProduct) => {
+    await axios.patch(`${API}/${editedProduct.id}`, editedProduct);
+    navigate(`/products`);
+  };
+
+  //! delete request (DELETE)
+  const deleteProduct = async (id) => {
+    await axios.delete(`${API}/${id}`);
+    navigate("/products");
+  };
+
+  //! get one product info
+  const getProductDetails = async (id) => {
+    const { data } = await axios.get(`${API}/${id}`);
+    console.log(state.productDetails);
+    dispatch({ type: ACTIONS.GET_PRODUCT_DETAILS, payload: data });
+  };
+
+  const fetchByParams = async (query, value) => {
+    const search = new URLSearchParams(window.location.search);
+    if (value === "All") {
+      search.delete(query);
+    } else if (query === "_sort") {
+      search.set(query, "price");
+      search.set("_order", value);
+    } else {
+      search.set(query, value);
+      console.log(query, value);
+    }
+    const url = `${window.location.pathname}?${search.toString()}`;
+    navigate(url);
+  };
+  const values = {
+    addProduct,
+    getProducts,
+    products: state.products,
+    fetchByParams,
+    getProductDetails,
+    productDetails: state.productDetails,
+    deleteProduct,
+    saveEditedProduct,
+  };
   return (
     <productContext.Provider value={values}>{children}</productContext.Provider>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import "./PaymentSuccess.css";
 import { Link } from "react-router-dom";
 
+
 const PaymentSuccess = () => {
   return (
     <div className="paymentSuccess__container">
@@ -13,9 +14,9 @@ const PaymentSuccess = () => {
             Expect a message :)
           </p>
 
-          <Link to="/">
+          <a href="/">
             <button className="paymentSuccess__btn">OK</button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

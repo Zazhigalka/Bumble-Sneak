@@ -6,15 +6,19 @@ import AdminPage from "../pages/AdminPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import Certificate from "../pages/certificate/Certificate";
 import Blog from "../pages/blog/Blog";
+import Auth from "../components/auth/Auth";
+import ProductDetails from "../components/products/productDetails/ProductDetails";
+import ProductMen from "../components/products/productGender/ProductMen";
+import ProductWomen from "../components/products/productGender/ProductWomen";
 import BlogDetailed from "../pages/blog/BlogDetailed";
 import FAQ from "../pages/faq/FAQ";
 import FAQshipping from "../pages/faq/FAQshipping";
 import Payment from "../pages/payment/Payment";
 import PaymentSuccess from "../pages/payment/PaymentSuccess";
-import Auth from "../pages/auth/Auth";
 import PersonalAccount from "../pages/personal account/PersonalAccount";
 import Checkout from "../pages/checkout/Checkout";
 import Cart from "../pages/cart/Cart";
+import EditProductPage from "../pages/EditProductPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -45,55 +49,83 @@ const MainRoutes = () => {
     },
     {
       link: "/blog",
-      element: <Blog/>,
+      element: <Blog />,
       id: 6,
     },
     {
-      link: "/blogdetailed",
-      element: <BlogDetailed/>,
+      link: "/auth",
+      element: <Auth />,
       id: 7,
     },
     {
-      link: "/faq",
-      element: <FAQ/>,
+      link: "/details/:id",
+      element: <ProductDetails />,
       id: 8,
     },
     {
-      link: "/faq-shipping",
-      element: <FAQshipping/>,
+      link: "/men",
+      element: <ProductMen />,
       id: 9,
     },
     {
-      link: "/payment",
-      element: <Payment/>,
+      link: "/women",
+      element: <ProductWomen />,
       id: 10,
     },
     {
-      link: "/paymentsuccess",
-      element: <PaymentSuccess/>,
+      link: "/blogdetailed",
+      element: <BlogDetailed />,
       id: 11,
     },
     {
       link: "/auth",
-      element: <Auth/>,
+      element: <Auth />,
       id: 12,
     },
     {
       link: "/personal",
-      element: <PersonalAccount/>,
+      element: <PersonalAccount />,
       id: 13,
     },
     {
       link: "/checkout",
-      element: <Checkout/>,
+      element: <Checkout />,
       id: 14,
     },
     {
       link: "/cart",
-      element: <Cart/>,
-      id: 15, 
+      element: <Cart />,
+      id: 15,
+    },
+    {
+      link: "/faq",
+      element: <FAQ />,
+      id: 16,
+    },
+    {
+      link: "/faq-shipping",
+      element: <FAQshipping />,
+      id: 17,
+    },
+    {
+      link: "/payment",
+      element: <Payment />,
+      id: 18,
+    },
+    {
+      link: "/paymentsuccess",
+      element: <PaymentSuccess />,
+      id: 19,
+    },
+    {
+      link: "/edit/:id",
+      element: <EditProductPage />,
+      id: 20,
     },
   ];
+
+  // const menUrl =
+
   return (
     <Routes>
       {PUBLIC_ROUTES.map((item) => (
