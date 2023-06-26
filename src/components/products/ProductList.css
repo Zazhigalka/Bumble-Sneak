@@ -1,0 +1,21 @@
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__right {
+  width: 80%;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.product__right_home:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1824px) {
+  .product__right {
+    width: 75%;
+  }
+}

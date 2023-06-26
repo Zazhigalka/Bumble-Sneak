@@ -10,8 +10,42 @@ import btn from "./imgs/btn1.png";
 import visa from "./imgs/visa.webp";
 import mastercard from "./imgs/mastercard.png";
 import paypal from "./imgs/paypal.png";
+import { useNavigate } from "react-router";
 
 const Certificate = () => {
+  const navigate = useNavigate();
+
+  const [isClickedDesign1, setIsClickedDesign1] = useState(false);
+  const [isClickedDesign2, setIsClickedDesign2] = useState(false);
+  const [isClickedDesign3, setIsClickedDesign3] = useState(false);
+  const [isClickedDesign4, setIsClickedDesign4] = useState(false);
+
+  const handleClickDesign1 = () => {
+    setIsClickedDesign1(!isClickedDesign1);
+    setIsClickedDesign2(false);
+    setIsClickedDesign3(false);
+    setIsClickedDesign4(false);
+  };
+
+  const handleClickDesign2 = () => {
+    setIsClickedDesign1(false);
+    setIsClickedDesign2(!isClickedDesign2);
+    setIsClickedDesign3(false);
+    setIsClickedDesign4(false);
+  };
+  const handleClickDesign3 = () => {
+    setIsClickedDesign1(false);
+    setIsClickedDesign2(false);
+    setIsClickedDesign3(!isClickedDesign3);
+    setIsClickedDesign4(false);
+  };
+  const handleClickDesign4 = () => {
+    setIsClickedDesign1(false);
+    setIsClickedDesign2(false);
+    setIsClickedDesign3(false);
+    setIsClickedDesign4(!isClickedDesign4);
+  };
+
   const [isClickedType1, setIsClickedType1] = useState(false);
   const [isClickedType2, setIsClickedType2] = useState(false);
 
@@ -71,15 +105,20 @@ const Certificate = () => {
         <ul className="certificate__design_ul">
           <li className="certificate__design_li">
             <img
-              className="certificate__imgs c-img1"
+              onClick={handleClickDesign1}
+              className={`certificate__imgs c-img1 ${
+                isClickedDesign1 ? "certificate__border" : ""
+              }`}
               src={certificate1}
               alt=""
             />
           </li>
-
           <li className="certificate__design_li">
             <img
-              className="certificate__imgs c-img2"
+              onClick={handleClickDesign2}
+              className={`certificate__imgs c-img2 ${
+                isClickedDesign2 ? "certificate__border" : ""
+              }`}
               src={certificate2}
               alt=""
             />
@@ -87,7 +126,10 @@ const Certificate = () => {
 
           <li className="certificate__design_li">
             <img
-              className="certificate__imgs c-img3"
+              onClick={handleClickDesign3}
+              className={`certificate__imgs c-img3 ${
+                isClickedDesign3 ? "certificate__border" : ""
+              }`}
               src={certificate3}
               alt=""
             />
@@ -95,7 +137,10 @@ const Certificate = () => {
 
           <li className="certificate__design_li">
             <img
-              className="certificate__imgs c-img4"
+              onClick={handleClickDesign4}
+              className={`certificate__imgs c-img4 ${
+                isClickedDesign4 ? "certificate__border" : ""
+              }`}
               src={certificate4}
               alt=""
             />
@@ -237,6 +282,9 @@ const Certificate = () => {
           </div>
 
           <div
+            onClick={() => {
+              navigate("/payment");
+            }}
             style={{
               position: "relative",
               display: "inline-block",
@@ -244,11 +292,12 @@ const Certificate = () => {
             }}
           >
             <img className="certificate__btn" src={btn} alt="" />
-            <div
+            <h3
+              className="buygif"
               style={{
                 position: "absolute",
-                top: "62%",
-                left: "57%",
+                top: "46%",
+                left: "26%",
                 transform: "translate(-50%, -50%)",
                 color: "white",
                 fontFamily: "Montserrat",
@@ -257,7 +306,7 @@ const Certificate = () => {
               }}
             >
               Buy the giftcard
-            </div>
+            </h3>
           </div>
         </div>
 
