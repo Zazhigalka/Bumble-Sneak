@@ -30,6 +30,14 @@ import kids_airmax from "../../img/kids_air_max.png";
 import kids_jordan from "../../img/kids_sky_jordan.png";
 import circle from "../../img/circle.png";
 import { useNavigate } from "react-router-dom";
+import nikeLogo from "./imgs/nike-logo.svg"
+import adidasLogo from "./imgs/adidas-logo.svg"
+import newbalanceLogo from "./imgs/new-balance-logo.svg"
+import vansLogo from "./imgs/vans-logo.svg"
+import reebokLogo from "./imgs/reebok-logo.svg"
+import pumaLogo from "./imgs/puma-logo.svg"
+
+
 
 const Home = () => {
   const popular = [
@@ -129,7 +137,26 @@ const Home = () => {
       <div className="container">
         <div className="brands">
           <h5 className="brands__title">Brands</h5>
-          <img className="brands__img" src={brands} alt="" />
+          <div className="img__brand_container">
+            <a href="https://www.nike.com/">
+          <img src={nikeLogo} className="img__brand nikeLogo" alt="" />
+          </a>
+          <a href="https://www.adidas.com/us">
+          <img src={adidasLogo} className="img__brand adidasLogo" alt="" />
+          </a>
+          <a href="https://www.newbalance.com/">
+          <img src={newbalanceLogo} className="img__brand newbalanceLogo" alt="" />
+          </a>
+          <a href="https://www.vans.com/en-us">
+          <img src={vansLogo} className="img__brand vansLogo" alt="" />
+          </a>
+          <a href="https://www.reebok.com/">
+          <img src={reebokLogo} className="img__brand reebokLogo" alt="" />
+          </a>
+          <a href="https://us.puma.com/us/en">
+          <img src={pumaLogo} className="img__brand pumaLogo" alt="" />
+          </a>
+          </div>
         </div>
       </div>
 

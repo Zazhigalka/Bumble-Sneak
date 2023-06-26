@@ -44,6 +44,7 @@ const Navbar = () => {
                     height: "30px",
                     width: "30px",
                     minWidth: "30px",
+                    backgroundColor:"#ff9900"
                   }}
                   variant="contained"
                   {...bindTrigger(popupState)}
@@ -131,7 +132,7 @@ const Navbar = () => {
             <img src={favourite} alt="" className="icons navbar__favourite" />
           </li>
           <li className="navbar__li">
-          <a href="/cart" className="navbar__cart_link">
+          <a href="/" className="navbar__cart_link">
             <img src={cart} alt="" className="icons navbar__cart" />
             </a>
           </li>
