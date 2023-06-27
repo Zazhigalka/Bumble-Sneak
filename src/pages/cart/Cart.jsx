@@ -11,9 +11,6 @@ import { Button } from "@mui/material";
 import { useCart } from "../../components/contexts/CartContextProvider";
 import trash from "./imgs/cart-trash.svg"
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
 
 export default function Cart() {
   const { cart, getCart, changeProductCount, deleteCartProduct } = useCart();

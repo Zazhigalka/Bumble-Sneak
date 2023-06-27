@@ -30,7 +30,6 @@ import newbalanceLogo from "./imgs/new-balance-logo.svg";
 import vansLogo from "./imgs/vans-logo.svg";
 import reebokLogo from "./imgs/reebok-logo.svg";
 import pumaLogo from "./imgs/puma-logo.svg";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   const popular = [
