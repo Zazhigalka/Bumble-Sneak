@@ -11,6 +11,8 @@
   width: 90%;
   display: flex;
   margin: auto;
+  /* margin-left: 5rem; */
+  justify-content: center
 }
 
 /*todo HOME MAIN */
@@ -223,9 +225,36 @@
   margin-top: 10%;
 }
 
-.brands__img {
-  width: 90%;
+
+.img__brand_container{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: space-around;
 }
+.img__brand{
+  width: 8rem;
+}
+.img__brand:hover{
+  transform: scale(1.2)
+}
+.newbalanceLogo, .nikeLogo{
+  transform: scale(1.4);
+}
+.vansLogo, .adidasLogo{
+  transform: scale(0.9);
+
+}
+.reebokLogo, .pumaLogo{
+  transform: scale(1.1);
+}
+.reebokLogo:hover{
+  transform: scale(0.9);
+}
+.pumaLogo:hover{
+  transform: scale(1.4);
+}
+
 
 .brands__title {
   margin: 0%;

@@ -7,7 +7,7 @@ import "typeface-montserrat";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="container">
+      <div className="footer__container">
         <ul className="footer__ul">
           <li className="footer__li">Customer Service</li>
           <li className="footer__li">Live Chat</li>
@@ -48,6 +48,11 @@ const Footer = () => {
           <li className="footer__li">
             <a className="footer__li_links" href="/products">
               Sneakers
+            </a>
+          </li>
+          <li className="footer__li">
+            <a className="footer__li_links" href="/personal">
+              My Account
             </a>
           </li>
         </ul>

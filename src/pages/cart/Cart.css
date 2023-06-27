@@ -140,3 +140,33 @@ margin-right: 0;
   width: 121.7%;
   margin-left: 0rem;
 }
+
+
+.tableCell__titles{
+  font-family: "Montserrat";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: #3d3d3d;
+  width: 74rem;
+}
+
+.tableCell__contents,.cart__clean{
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: #3d3d3d;
+}
+.tableCell__btn, .tableCell__inp{
+  background-color: white;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid #3d3d3d;
+}
+.cart__clean{
+  font-size: 24px;
+}

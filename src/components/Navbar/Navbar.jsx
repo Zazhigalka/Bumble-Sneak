@@ -1,7 +1,6 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "./imgs/logo.png";
-import search from "./imgs/search.png";
 import account from "./imgs/account.png";
 import favourite from "./imgs/favourite.png";
 import cart__icon from "./imgs/cart.png";
@@ -11,13 +10,8 @@ import { useAuth } from "../contexts/AuthContextProvider";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import PopupState, {
-  bindTrigger,
-  bindMenu,
-  bindPopover,
-} from "material-ui-popup-state";
+import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 import menu from "../../img/list.png";
-import { Popover } from "@mui/material";
 import { useCart } from "../contexts/CartContextProvider";
 import { Badge } from "@mui/base";
 
@@ -34,7 +28,7 @@ const Navbar = () => {
   console.log(cart.products.length);
 
   const {
-    handleLogout,
+    // handleLogout,
     user: { email },
   } = useAuth();
 
@@ -132,13 +126,15 @@ const Navbar = () => {
           </li>
 
           <li className="navbar__li navbar__li-texts">
-            <a href="/personal" className="navbar__li_link">
+            <a href="/auth" className="navbar__li_link">
               <span className="navbar__li_a">ACCOUNT</span>{" "}
               <img src={account} alt="" className="icons navbar__account" />
             </a>
           </li>
           <li className="navbar__li">
+          <a href="/cart" className="navbar__cart_link">
             <img src={favourite} alt="" className="icons navbar__favourite" />
+            </a>
           </li>
           <li className="navbar__li">
             <a href="/cart" className="navbar__cart_link">

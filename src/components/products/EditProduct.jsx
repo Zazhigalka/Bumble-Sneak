@@ -72,7 +72,7 @@ const EditProduct = () => {
   return (
     <div className="admin">
       <h4 className="admin__title animate__animated animate__rubberBand">
-        ADD PRODUCT
+        EDIT PRODUCT
       </h4>
       <div className="admin__block animate__animated animate__bounce">
         <input
@@ -142,7 +142,7 @@ const EditProduct = () => {
               saveEditedProduct(product);
             }}
           >
-            PUSH
+            SAVE CHANGES
           </button>
         </div>
       </div>

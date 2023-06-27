@@ -451,14 +451,12 @@ const Checkout = () => {
         </div>
         {/* Кнопки END */}
 
-        {/* Product START */}
         <div className="checkout__product">
           <a href="/payment">
             <img src={checkoutBtn} alt="" className="checkout__btn" />
           </a>
         </div>
 
-        {/* Product END */}
       </div>
     </div>
   );

@@ -22,7 +22,7 @@ export default function GenderSelect({ product, setProduct }) {
       >
         <MenuItem value="Men">Men</MenuItem>
         <MenuItem value="Women">Women</MenuItem>
-        <MenuItem value="Kids">Kids</MenuItem>
+        <MenuItem value="Unisex">Unisex</MenuItem>
       </Select>
     </FormControl>
   );

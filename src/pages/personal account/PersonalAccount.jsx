@@ -59,6 +59,7 @@ const  PersonalAccount = () => {
     setIsClickedPA4(false);
     setIsClickedPA5(false);
   };
+  
   return (
     <div className="personal-account">
         <span className="pa__titles">
