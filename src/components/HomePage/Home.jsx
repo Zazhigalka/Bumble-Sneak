@@ -71,7 +71,7 @@ const Home = () => {
       id: 4,
     },
   ];
-  
+
   return (
     <>
       <div className="home__up">
@@ -157,23 +157,31 @@ const Home = () => {
       <div className="container">
         <div className="newIn">
           <div className="newIn__left">
-            <div className="newIn__left_up">
-              <img className="newIn__left_up_btn" src={new__button} alt="" />
-            </div>
-            <div className="newIn__left_down">
-              <img className="legend" src={legend} alt="" />
-              <img className="eur90" src={eur90} alt="" />
-            </div>
+            <a href="/products">
+              <div className="newIn__left_up">
+                <img className="newIn__left_up_btn" src={new__button} alt="" />
+              </div>
+            </a>
+            <a href="/women">
+              <div className="newIn__left_down">
+                <img className="legend" src={legend} alt="" />
+                <img className="eur90" src={eur90} alt="" />
+              </div>
+            </a>
           </div>
           <div className="newIn__right">
-            <div className="newIn__right_up">
-              <img className="legend" src={legend} alt="" />
-              <img className="eur90" src={eur90} alt="" />
-            </div>
-            <div className="newIn__right_down">
-              <img className="legend" src={legend} alt="" />
-              <img className="eur90" src={eur90} alt="" />
-            </div>
+            <a href="/products">
+              <div className="newIn__right_up">
+                <img className="legend" src={legend} alt="" />
+                <img className="eur90" src={eur90} alt="" />
+              </div>
+            </a>
+            <a href="/men">
+              <div className="newIn__right_down">
+                <img className="legend" src={legend} alt="" />
+                <img className="eur90" src={eur90} alt="" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -194,10 +202,14 @@ const Home = () => {
                 <div className="card__img_div">
                   <img className="card__img latest" src={card.img} alt="" />
                   <h5 style={{ opacity: 0.7 }} className="card__linked_buy">
-                    <span>Shop now </span>
+                    <a href="/products">
+                      {" "}
+                      <span>Shop now </span>
+                    </a>
                     <img className="card__arrow" src={arrow} alt="" />
                   </h5>
                 </div>
+
                 <div className="card__name_div">
                   <h4 className="card__name">{card.name}</h4>
                   <p className="card__descr">{card.descr}</p>
@@ -216,21 +228,25 @@ const Home = () => {
             <img className="asics__left__bg" src={asics} alt="" />
           </div>
           <div className="asics__right">
-            <div className="asics__right_up">
-              <h3 className="asics__right_up_descr">Discover</h3>
-              <h3 className="asics__right_up_title">
-                New Balance <br /> 327
-              </h3>
-              <img className="asics__right_up__btn" src={asics_btn} alt="" />
+            <a href="/products">
+              <div className="asics__right_up">
+                <h3 className="asics__right_up_descr">Discover</h3>
+                <h3 className="asics__right_up_title">
+                  New Balance <br /> 327
+                </h3>
+                <img className="asics__right_up__btn" src={asics_btn} alt="" />
 
-              <img className="asics__right__bg" src={nb327} alt="" />
-            </div>
-            <div className="asics__right_down">
-              <h3 className="asics__right_down_descr">REBOOK</h3>
-              <h3 className="asics__right_down_title">Zig Kinetic</h3>
-              <img className="asics__right_down_btn" src={asics_btn} alt="" />
-              <img className="asics__right__bg" src={genetic} alt="" />
-            </div>
+                <img className="asics__right__bg" src={nb327} alt="" />
+              </div>
+            </a>
+            <a href="/products">
+              <div className="asics__right_down">
+                <h3 className="asics__right_down_descr">REBOOK</h3>
+                <h3 className="asics__right_down_title">Zig Kinetic</h3>
+                <img className="asics__right_down_btn" src={asics_btn} alt="" />
+                <img className="asics__right__bg" src={genetic} alt="" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -240,8 +256,7 @@ const Home = () => {
           <h2 className="kids__title">Kids</h2>
           <ul className="kids__list">
             <li className="kids__list_item">
-              <img src={kids_force} alt="" className="kids__list_img"
-              />
+              <img src={kids_force} alt="" className="kids__list_img" />
               <h5 className="kids__list_title">NIKE</h5>
               <div className="kids__list_down">
                 <h5 className="kids__list_descr">
