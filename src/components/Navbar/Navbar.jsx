@@ -24,6 +24,7 @@ const Navbar = () => {
   ];
 
   const { cart } = useCart();
+  const { handleLogout } = useAuth();
 
   console.log(cart.products.length);
 
@@ -124,7 +125,13 @@ const Navbar = () => {
               CERTIFICATE
             </a>
           </li>
-
+          <li className="navbar__li navbar__li-texts">
+            <a href="/auth" className="navbar__li_link">
+              <span onClick={handleLogout} className="navbar__li_a">
+                LOG OUT
+              </span>{" "}
+            </a>
+          </li>
           <li className="navbar__li navbar__li-texts">
             <a href="/auth" className="navbar__li_link">
               <span className="navbar__li_a">ACCOUNT</span>{" "}
@@ -132,8 +139,8 @@ const Navbar = () => {
             </a>
           </li>
           <li className="navbar__li">
-          <a href="/cart" className="navbar__cart_link">
-            <img src={favourite} alt="" className="icons navbar__favourite" />
+            <a href="/cart" className="navbar__cart_link">
+              <img src={favourite} alt="" className="icons navbar__favourite" />
             </a>
           </li>
           <li className="navbar__li">
