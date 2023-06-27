@@ -21,6 +21,10 @@ export default function CategorySelect({ product, setProduct }) {
         onChange={handleChange}
       >
         <MenuItem value="Nike">Nike</MenuItem>
+        <MenuItem value="Vans">Vans</MenuItem>
+        <MenuItem value="Puma">Puma</MenuItem>
+        <MenuItem value="Adidas">Adidas</MenuItem>
+        <MenuItem value="Reebok">Reebok</MenuItem>
         <MenuItem value="New Balance">New Balance</MenuItem>
         <MenuItem value="Shoes">Shoes</MenuItem>
       </Select>

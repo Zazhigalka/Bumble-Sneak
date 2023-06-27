@@ -50,6 +50,11 @@ const Footer = () => {
               Sneakers
             </a>
           </li>
+          <li className="footer__li">
+            <a className="footer__li_links" href="/personal">
+              My Account
+            </a>
+          </li>
         </ul>
 
         <ul className="footer__ul">

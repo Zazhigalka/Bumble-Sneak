@@ -90,8 +90,8 @@ const SideBar = () => {
               <h3>Women</h3>
             </div>
             <div className="radio__group">
-              <FormControlLabel value="Kids" control={<Radio />} />{" "}
-              <h3>Kids</h3>
+              <FormControlLabel value="Unisex" control={<Radio />} />{" "}
+              <h3>Unisex</h3>
             </div>
           </RadioGroup>
         </FormControl>
@@ -145,12 +145,28 @@ const SideBar = () => {
               <h3>Nike</h3>
             </div>
             <div className="radio__group">
-              <FormControlLabel value="Shoes" control={<Radio />} />{" "}
-              <h3>Shoes</h3>
+              <FormControlLabel value="Vans" control={<Radio />} />{" "}
+              <h3>Vans</h3>
+            </div>{" "}
+            <div className="radio__group">
+              <FormControlLabel value="Puma" control={<Radio />} />{" "}
+              <h3>Puma</h3>
+            </div>
+            <div className="radio__group">
+              <FormControlLabel value="Adidas" control={<Radio />} />{" "}
+              <h3>Adidas</h3>
+            </div>
+            <div className="radio__group">
+              <FormControlLabel value="Reebok" control={<Radio />} />{" "}
+              <h3>Reebok</h3>
             </div>
             <div className="radio__group">
               <FormControlLabel value="New Balance" control={<Radio />} />{" "}
               <h3>New Balance</h3>
+            </div>
+            <div className="radio__group">
+              <FormControlLabel value="Shoes" control={<Radio />} />{" "}
+              <h3>Shoes</h3>
             </div>
           </RadioGroup>
         </FormControl>

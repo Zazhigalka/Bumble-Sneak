@@ -8,7 +8,7 @@ import visa from "../certificate/imgs/visa.webp";
 import mastercard from "../certificate/imgs/mastercard.png";
 import paypal from "../certificate/imgs/paypal.png";
 
-import checkoutBtn from "./imgs/checkout-btn.png"
+import checkoutBtn from "./imgs/checkout-btn.png";
 
 const Checkout = () => {
   // !Payment
@@ -451,51 +451,12 @@ const Checkout = () => {
         </div>
         {/* Кнопки END */}
 
-        {/* Product START */}
         <div className="checkout__product">
-          <div className="checkout__product-info">
-            <img src="" alt="" className="checkout__product-image" />
-            <span>
-              <h2 className="checkout__product-title">Title</h2>
-              <p className="checkout__product-descr">
-                description of the Product snkfdndlsncdskjdklm
-                kjdndsdnlsdm;sdscl csdjknesdsdkl knscsbdjkc; sdncsd;nc
-              </p>
-              <p className="checkout__product-size-price">Price</p>
-            </span>
-            
-            <p className="checkout__product-size-title">Size</p>
-            <p className="checkout__product-size-num">38</p>
-            <p className="checkout__product-size-country">EUR</p>
-          </div>
-          <div className="checkout__price">
-            <div style={{ display: "flex" }}>
-              <p className="checkout__price_title1">Subtotal</p>
-              <p className="checkout__price_prices">90</p>
-            </div>
-
-            <div style={{ display: "flex" }}>
-              <p className="checkout__price_title2">Shipping Cost</p>
-              <p className="checkout__price_prices">20</p>
-            </div>
-
-            <hr
-              style={{
-                color:"3d3d3d3",
-                width:"26rem",
-                marginLeft:"-2rem"
-              }}
-            />
-            <div style={{ display: "flex" }}>
-              <p className="checkout__price_title3">Total</p>
-              <p className="checkout__price_prices">110</p>
-            </div>
+          <a href="/payment">
             <img src={checkoutBtn} alt="" className="checkout__btn" />
-          </div>
+          </a>
         </div>
-        
 
-        {/* Product END */}
       </div>
     </div>
   );

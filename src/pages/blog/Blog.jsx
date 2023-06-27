@@ -23,7 +23,7 @@ const Blog = () => {
           history a...
           <br />
           <br />
-          <a href="/" className="blog__links blog1__link">
+          <a href="/blogdetailed" className="blog__links blog1__link">
             read more
           </a>
         </p>
@@ -38,7 +38,7 @@ const Blog = () => {
           history a...
           <br />
           <br />
-          <a href="/" className="blog__links blog2__link">
+          <a href="/blogdetailed" className="blog__links blog2__link">
             read more
           </a>
         </p>
@@ -60,7 +60,7 @@ const Blog = () => {
           history a...
           <br />
           <br />
-          <a href="/" className="blog__links blog3__link">
+          <a href="/blogdetailed" className="blog__links blog3__link">
             read more
           </a>
         </p>
@@ -76,7 +76,7 @@ const Blog = () => {
           history a...
           <br />
           <br />
-          <a href="/" className="blog__links blog4__link">
+          <a href="/blogdetailed" className="blog__links blog4__link">
             read more
           </a>
         </p>
@@ -95,13 +95,15 @@ const Blog = () => {
           history a...
           <br />
           <br />
-          <a href="/" className="blog__links blog5__link">
+          <a href="/blogdetailed" className="blog__links blog5__link">
             read more
           </a>
         </p>
       </div>
       <div className="blog__btn-div">
+        <a href="/blogdetailed">
         <button className="blog__btn">Show more</button>
+        </a>
       </div>
     </div>
   );

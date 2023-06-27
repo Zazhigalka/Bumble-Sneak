@@ -1,10 +1,6 @@
-import React, { useEffect, useState } from "react";
 import "./Home.css";
 import button from "../../img/home_btn.png";
 import upLine from "../../img/home__line.png";
-import downLine from "../../img/home_balckline.png";
-// import homeBackGround from "../../img/admin_bg.png";
-import black from "../../img/BLACK.png";
 import "typeface-bebas-neue";
 import allsneakers from "../../img/all_sneakers.png";
 import men from "../../img/men.png";
@@ -12,7 +8,6 @@ import women from "../../img/women.png";
 import kids from "../../img/kids.png";
 import arrow from "../../img/arrow-right.png";
 import "typeface-montserrat";
-import brands from "../..//img/brands.png";
 import new__button from "../../img/new__button.png";
 import legend from "../../img/Legend Ink.png";
 import eur90 from "../../img/€ 90.png";
@@ -29,15 +24,12 @@ import kids_lv from "../../img/kids_force_lv.png";
 import kids_airmax from "../../img/kids_air_max.png";
 import kids_jordan from "../../img/kids_sky_jordan.png";
 import circle from "../../img/circle.png";
-import { useNavigate } from "react-router-dom";
-import nikeLogo from "./imgs/nike-logo.svg"
-import adidasLogo from "./imgs/adidas-logo.svg"
-import newbalanceLogo from "./imgs/new-balance-logo.svg"
-import vansLogo from "./imgs/vans-logo.svg"
-import reebokLogo from "./imgs/reebok-logo.svg"
-import pumaLogo from "./imgs/puma-logo.svg"
-
-
+import nikeLogo from "./imgs/nike-logo.svg";
+import adidasLogo from "./imgs/adidas-logo.svg";
+import newbalanceLogo from "./imgs/new-balance-logo.svg";
+import vansLogo from "./imgs/vans-logo.svg";
+import reebokLogo from "./imgs/reebok-logo.svg";
+import pumaLogo from "./imgs/puma-logo.svg";
 
 const Home = () => {
   const popular = [
@@ -79,9 +71,7 @@ const Home = () => {
       id: 4,
     },
   ];
-
-  const navigate = useNavigate();
-
+  
   return (
     <>
       <div className="home__up">
@@ -139,23 +129,27 @@ const Home = () => {
           <h5 className="brands__title">Brands</h5>
           <div className="img__brand_container">
             <a href="https://www.nike.com/">
-          <img src={nikeLogo} className="img__brand nikeLogo" alt="" />
-          </a>
-          <a href="https://www.adidas.com/us">
-          <img src={adidasLogo} className="img__brand adidasLogo" alt="" />
-          </a>
-          <a href="https://www.newbalance.com/">
-          <img src={newbalanceLogo} className="img__brand newbalanceLogo" alt="" />
-          </a>
-          <a href="https://www.vans.com/en-us">
-          <img src={vansLogo} className="img__brand vansLogo" alt="" />
-          </a>
-          <a href="https://www.reebok.com/">
-          <img src={reebokLogo} className="img__brand reebokLogo" alt="" />
-          </a>
-          <a href="https://us.puma.com/us/en">
-          <img src={pumaLogo} className="img__brand pumaLogo" alt="" />
-          </a>
+              <img src={nikeLogo} className="img__brand nikeLogo" alt="" />
+            </a>
+            <a href="https://www.adidas.com/us">
+              <img src={adidasLogo} className="img__brand adidasLogo" alt="" />
+            </a>
+            <a href="https://www.newbalance.com/">
+              <img
+                src={newbalanceLogo}
+                className="img__brand newbalanceLogo"
+                alt=""
+              />
+            </a>
+            <a href="https://www.vans.com/en-us">
+              <img src={vansLogo} className="img__brand vansLogo" alt="" />
+            </a>
+            <a href="https://www.reebok.com/">
+              <img src={reebokLogo} className="img__brand reebokLogo" alt="" />
+            </a>
+            <a href="https://us.puma.com/us/en">
+              <img src={pumaLogo} className="img__brand pumaLogo" alt="" />
+            </a>
           </div>
         </div>
       </div>
@@ -187,7 +181,7 @@ const Home = () => {
       <div className="container">
         <div className="home__popular">
           <h3 className="home__popular_title">Latest Sneakers</h3>
-          <div className="home__popular_card">  
+          <div className="home__popular_card">
             {latest.map((card) => (
               <div
                 className="card__latest"
@@ -246,7 +240,8 @@ const Home = () => {
           <h2 className="kids__title">Kids</h2>
           <ul className="kids__list">
             <li className="kids__list_item">
-              <img src={kids_force} alt="" className="kids__list_img" />
+              <img src={kids_force} alt="" className="kids__list_img"
+              />
               <h5 className="kids__list_title">NIKE</h5>
               <div className="kids__list_down">
                 <h5 className="kids__list_descr">

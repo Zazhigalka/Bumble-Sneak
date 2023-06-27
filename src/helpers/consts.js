@@ -6,4 +6,5 @@ export const ACTIONS = {
   GET_CART: "GET_CART",
 };
 
-export const ADMIN = "admin@gmail.com";
+export const ADMIN = "admin11@gmail.com";
+const password = "1122334455";
